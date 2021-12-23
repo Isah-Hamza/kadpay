@@ -1,13 +1,25 @@
-body {
+*, *::after, *::before{
+  font-family:'Futura Medium' !important;
+  letter-spacing: 1.9;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: 'Futura Medium';
+  src: url('./assets/fonts/futura/futura\ medium\ bt.ttf');
+}
+
+@font-face {
+  font-family: 'Futura Bold';
+  src: url('./assets/fonts/futura/Futura\ Bold\ font.ttf');
+}
+
+.futura-bold{
+  font-family: 'Futura Bold';
+}
+.futura-medium{
+  font-family: 'Futura Medium';
 }

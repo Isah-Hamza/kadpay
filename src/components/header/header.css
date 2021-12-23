@@ -1,0 +1,190 @@
+body::before{
+    display: block;
+    width: 100%;
+    height: 75px;
+    position: relative;
+    background: red;
+}
+.header-container .toggler{
+    display: none;
+}
+.header-container .mobile-links{
+    /* display: none; */
+    position: absolute;
+    top: 75px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transition:left .5s ease;
+    background: rgba(0, 0, 0, .95);
+}
+.header-container .mobile-links ul{
+    padding: 0 20px;
+
+}
+.header-container .mobile-links ul li{
+    padding: 12px;
+    display: flex;
+    align-items: center;
+}
+.header-container .mobile-links ul li .icon{
+    margin-right: 5px;
+}
+.header-container .mobile-links ul li img{
+    width: 25px;
+    height: 25px;
+}
+.header-container .coin-dropdown{
+    display: none;
+    z-index: 2;
+}
+.header-container li{
+    list-style-type: none;
+}
+.header-container li.coin{
+    display: flex;
+    cursor: pointer;
+}
+.arrow{
+    font-size: 1.7rem;
+}
+.header-container div.coin{
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.header-container div.coin:hover{
+    background-color: #374e77;
+    
+}
+.header-container .coin-dropdown{
+    position: absolute;
+    font-size: 16px;
+    top:  100%;
+    width: 200px;
+    left: 0%;
+    color: black;
+    border-radius: 0 0 5px 5px;
+}
+.header-container .coin-dropdown li{
+    padding:15px 10px;
+}
+.header-container .coin-dropdown li:hover{
+    background-color: #6287c7;
+}
+.header-container div.coin:hover .coin-dropdown{
+    display: block;
+    background-color: #374e77;
+    color: white;
+}
+.header-container {
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    display: flex;
+    padding-inline: clamp(10px, 3.5vw, 200px);
+    align-items: center;
+    background-color: #111621;
+    color: white;
+    height: 75px;
+}
+.header-container .logo{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+.header-container .logo img{
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+}
+.header-container .right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+    margin-left: 20px;
+}
+.header-container img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.header-container .toggler img{
+    border-radius: 0 !important;
+    height: 22px;
+    width: 26px;
+}
+.header-container .social-media img{
+    margin-right: 10px;
+}
+.header-container .search-box{
+    border: 2px solid rgb(28, 28, 241);
+    background-color: #1f2634;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    border-radius: 5px; 
+    height: 40px;
+    width: 250px;
+}
+.header-container .search-box input{
+    background-color: #1f2634;
+    height: 36px;
+    width: 220px;
+    outline: none;
+    border: none;
+    color: white;
+    padding-left: 5px;
+}
+.header-container .search-box img{
+    width:25px;
+    height: 20px;
+    margin: 0 2px 0 5px;
+}
+.header-container .submit-coin button{
+    width: 150px;
+    height: 40px;
+    background-color: green;
+    color: white;
+    outline: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1030px) {
+    .social-media{
+        display: none;
+    }
+}
+@media screen and (max-width: 940px) {
+    .header-container .toggler{
+        display: flex;
+    }
+    .header-container .right{
+        display: none;
+    }
+    .header-container{
+        display: flex;
+        justify-content: space-between;
+    }
+    .header-container .mobile-links{
+
+    }
+}
+@media screen and (max-height: 400px) {
+    .header-container .mobile-links ul li{
+        padding: 3px 10px;
+    }
+}

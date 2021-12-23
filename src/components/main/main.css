@@ -1,0 +1,217 @@
+.main{
+    z-index: -1;
+    background-color: #1f2634;
+    color: white !important; 
+    padding-inline: clamp(10px, 4.5vw, 200px);
+    padding-block: 90px 20px ;
+    /* padding: 80px clamp(10px, 4.5vw, 200px) 20px 0; */
+}
+.is-shown-mobile{
+    display: none;
+}
+a{
+    color: rgb(136, 136, 243);
+    text-decoration: none;
+    font-size: 18px;
+}
+a:hover{
+    text-decoration: underline;
+}
+.best-coin{
+    position: relative;
+    margin-bottom: 25px;
+   
+}
+.best-coin a{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.best-coin h1{
+    text-transform: capitalize;
+    font-size: clamp(35px, 4vw, 50px);
+}
+.best-coin h2{
+    font-size: clamp(20px,4vw,30px);
+    opacity: .8;
+}
+.promoted{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+.main .coin-table table{
+    width: 100%;
+    border-spacing: 0;
+}
+.main .coin-table table thead{
+    background-color: #111621;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-bottom: 1px solid #0a9fc4;
+    margin-bottom: 1px;
+}
+.main .coin-table .thead{
+    border-bottom: 1px solid #0a9fc4;
+    margin-bottom: 1px;
+}
+.main .coin-table table tbody tr:hover{
+    background-color: #111621 !important;
+    cursor: pointer;
+}
+.main .coin-table table tbody tr:nth-child(odd){
+    background-color: #3c4e77;
+}
+.main .coin-table table th,
+.main .coin-table table td{
+    padding: 10px;
+    text-align: left;
+}
+.main .coin-table table tr img{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+.coin-table table .chain{
+    padding: 5px;
+    background-color: #4c5c75;
+    border-radius: 5px;
+}
+.coin-table table .votes{
+    background-color: #0a9fc4;
+    padding: 5px;
+    border-radius: 5px;
+}
+.coin-table table button{
+    padding: 12px 30px;
+    background-color: green;
+    border-radius: 5px;
+    color: white;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    
+}
+.coin-table table button:hover{
+    opacity: .8;
+}
+.main .favorite-coin-missing{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    margin: 30px 0;
+}
+.main .submit-coin,
+.main .new-listings{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+padding: 30px 20px;
+background-color: rgba(0, 0, 0, .7);
+border-radius: 10px;
+font-size: 18px;
+width:49%;
+}
+.main .submit-coin button{
+    background-color: green;
+}
+.main .new-listings button{
+    background-color: #0a9fc4;
+}
+.main .favorite-coin-missing h2{
+    margin-bottom: 10px;
+}
+.main .favorite-coin-missing h2{
+    margin: 10px 0;
+}
+.main .favorite-coin-missing .submit-coin button,
+.main .favorite-coin-missing .new-listings button{
+    margin: 20px 0 0 0 ;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    padding: 12px 55px;
+    cursor: pointer;
+    color: white;
+    max-width: fit-content;
+}
+.main .about-info{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.main .about-info h1{
+    font-size: 33px;
+    font-weight: normal;
+    letter-spacing: 1.6;
+    margin-bottom: 20px;
+}
+.main .about-info p{
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: justify;
+}
+.main .about-info a{
+    font-size:  16px;
+}
+
+@media screen and (max-width : 1030px) {
+    .is-hidden-tablet{
+        display: none;
+    }
+}
+@media screen and (max-width : 875px) {
+    .is-hidden-mobile{
+        display: none;
+    }
+    .is-hidden-tablet{
+        display: block;
+    }
+}
+@media screen and (max-width : 660px) {
+    .main .favorite-coin-missing{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .main .submit-coin,
+    .main .new-listings{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .main .about-info{
+        grid-template-columns: 1fr;
+        grid-gap: 30px;
+    }
+}
+@media screen and (max-width: 555px) {
+    .main{
+        padding-block: 90px 20px;
+    }
+    .best-coin a,
+    .promoted a{
+        display: none;
+    }
+    .main .about-info h1{
+        margin-bottom: 5px;
+        font-size: 30px;
+    }
+    .main .favorite-coin-missing br{
+        display: none;
+    }
+}
+@media screen and (max-width: 450px) {
+    .is-hidden-tablet{
+        display: none;
+    }
+    .is-shown-mobile{
+        display: block;
+        margin-bottom: 3px;
+    }
+    .promoted{
+        margin:20px 0 5px 0;
+    }
+}
