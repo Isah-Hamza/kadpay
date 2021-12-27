@@ -179,9 +179,7 @@ body::before{
         display: flex;
         justify-content: space-between;
     }
-    .header-container .mobile-links{
 
-    }
 }
 @media screen and (max-height: 400px) {
     .header-container .mobile-links ul li{

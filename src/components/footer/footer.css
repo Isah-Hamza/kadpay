@@ -1,5 +1,6 @@
 .footer-container{
-    padding-inline: clamp(10px, 3.5vw, 200px);
+    padding-inline: clamp(10px, 3.
+    , 200px);
     background-color: #111621;
     color: white;
 }
