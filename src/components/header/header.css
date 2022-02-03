@@ -1,22 +1,92 @@
-body::before{
-    display: block;
+.header-container{
+    display: flex;
+    justify-content: space-between;
     width: 100%;
-    height: 75px;
-    position: relative;
-    background: red;
+    height: 70px;
+    align-items: center;
+    padding: 0 40px;
+    border-bottom: 1px solid gainsboro;
+    background-color: #f7f8f9;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
 }
+
+.header-container .logo{
+    margin-top: 32px;
+}
+
+.header-container .logo img{
+    width: 150px;
+    height: 45px;
+}
+
+.header-container .nav-links ul{
+    display: flex;
+}
+
+.header-container .nav-links ul li{
+    padding: 10px 20px;
+    list-style: none;
+}
+
+.header-container .nav-links ul li a{
+    transition: all .5s ease;
+    color: black;
+    text-decoration: none;
+    display: block;
+    position: relative;
+}
+
+.header-container .nav-links ul li a::after{
+    width: 0%;
+    position: absolute;
+    top: 23px;
+    left: 0;
+    display: block;
+    background: var(--orange-color);
+    height: 2px;
+    content: '';
+}
+
+.header-container .nav-links ul li a:hover{
+    
+    transition: all .5s ease;
+}
+
+.header-container .nav-links ul li a:hover::after{
+    width: 100%;
+    transition: all .5s ease;
+}
+
+.header-container .nav-links ul li a.active::after{
+    width: 100% !important;
+}
+.header-container .nav-links ul li a.active{
+    font-weight: bold;
+}
+
+
+
+
+
+
 .header-container .toggler{
     display: none;
 }
+
 .header-container .mobile-links{
-    /* display: none; */
     position: absolute;
-    top: 75px;
+    top: 70px;
     left: 0;
     width: 100%;
-    height: 100vh;
+    height: 240px;
     transition:left .5s ease;
     background: rgba(0, 0, 0, .95);
+    background-color: var(--orange-color);
+    background-color: var(--blue-color);
+    opacity: .95;
 }
 .header-container .mobile-links ul{
     padding: 0 20px;
@@ -26,149 +96,33 @@ body::before{
     padding: 12px;
     display: flex;
     align-items: center;
+    justify-content: center;
+    text-align: center;
 }
-.header-container .mobile-links ul li .icon{
-    margin-right: 5px;
-}
-.header-container .mobile-links ul li img{
-    width: 25px;
-    height: 25px;
-}
-.header-container .coin-dropdown{
-    display: none;
-    z-index: 2;
-}
-.header-container li{
-    list-style-type: none;
-}
-.header-container li.coin{
-    display: flex;
-    cursor: pointer;
-}
-.arrow{
-    font-size: 1.7rem;
-}
-.header-container div.coin{
-    position: relative;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    padding: 10px 20px;
-    font-weight: bold;
-    font-size: 20px;
-}
-.header-container div.coin:hover{
-    background-color: #374e77;
-    
-}
-.header-container .coin-dropdown{
-    position: absolute;
-    font-size: 16px;
-    top:  100%;
-    width: 200px;
-    left: 0%;
-    color: black;
-    border-radius: 0 0 5px 5px;
-}
-.header-container .coin-dropdown li{
-    padding:15px 10px;
-}
-.header-container .coin-dropdown li:hover{
-    background-color: #6287c7;
-}
-.header-container div.coin:hover .coin-dropdown{
+
+.header-container .mobile-links ul li a{
+    color : black;
     display: block;
-    background-color: #374e77;
-    color: white;
-}
-.header-container {
-    position: fixed;
     width: 100%;
-    z-index: 2;
-    display: flex;
-    padding-inline: clamp(10px, 3.5vw, 200px);
-    align-items: center;
-    background-color: #111621;
-    color: white;
-    height: 75px;
+    height: 100%;
+    text-decoration: none;
+    font-size: large;
 }
-.header-container .logo{
-    display: flex;
-    align-items: center;
-    font-weight: bold;
-    font-size: 20px;
-}
-.header-container .logo img{
-    margin-right: 10px;
-    width: 40px;
-    height: 40px;
-}
-.header-container .right{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex: 1;
-    margin-left: 20px;
-}
-.header-container img{
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    cursor: pointer;
-}
+
 .header-container .toggler img{
     border-radius: 0 !important;
+    filter: invert(1);
     height: 22px;
-    width: 26px;
-}
-.header-container .social-media img{
-    margin-right: 10px;
-}
-.header-container .search-box{
-    border: 2px solid rgb(28, 28, 241);
-    background-color: #1f2634;
-    display: flex;
-    overflow: hidden;
-    align-items: center;
-    border-radius: 5px; 
-    height: 40px;
-    width: 250px;
-}
-.header-container .search-box input{
-    background-color: #1f2634;
-    height: 36px;
-    width: 220px;
-    outline: none;
-    border: none;
-    color: white;
-    padding-left: 5px;
-}
-.header-container .search-box img{
-    width:25px;
-    height: 20px;
-    margin: 0 2px 0 5px;
-}
-.header-container .submit-coin button{
-    width: 150px;
-    height: 40px;
-    background-color: green;
-    color: white;
-    outline: none;
-    border: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    text-align: center;
+    width: 30px;
     cursor: pointer;
 }
 
-@media screen and (max-width: 1030px) {
-    .social-media{
-        display: none;
-    }
+.header-container .toggler .close-icon{
+    filter: unset;
 }
-@media screen and (max-width: 940px) {
+
+
+@media screen and (max-width: 780px) {
     .header-container .toggler{
         display: flex;
     }
@@ -181,8 +135,8 @@ body::before{
     }
 
 }
-@media screen and (max-height: 400px) {
-    .header-container .mobile-links ul li{
-        padding: 3px 10px;
+@media screen and (max-width: 500px) {
+    .header-container {
+        padding: 0 10px;
     }
 }

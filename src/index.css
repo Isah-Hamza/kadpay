@@ -7,6 +7,14 @@
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+:root{
+  --blue-color:#21cbf3;
+  --pink-color-1:#ff0058;
+  --pink-color-2:#ff4797;
+  --orange-color:#ffbd60;
+  --green-color:#06ffb2;
+}
+
 @font-face {
   font-family: 'Futura Medium';
   src: url('./assets/fonts/futura/futura\ medium\ bt.ttf');
@@ -22,4 +30,8 @@
 }
 .futura-medium{
   font-family: 'Futura Medium';
+}
+
+body{
+  background-color: #f7f8f9;
 }

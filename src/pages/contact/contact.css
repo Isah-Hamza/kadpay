@@ -1,0 +1,94 @@
+.contact-container .contact{
+    margin: 20px auto;
+    width: clamp(300px, 80%, 1000px);
+    box-shadow: 2px 0px 8px 1px rgba(0,0,0,.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    margin-top: 110px;
+    margin-bottom: 50px;
+}
+
+.contact-container {
+    margin-top: 70px;
+}
+.contact-container .contact h1{
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: clamp(27px, 2.1vw + 1rem,  45px);
+}
+.contact-container .contact p{
+    margin-bottom: 10px;
+}
+
+.contact-container .contact > p{
+    text-align: center;
+}
+.contact-container .contact p.enquiry{
+    font-size: 18px;
+}
+.contact-container .contact div,
+.contact-container .contact button{
+    width: 80%;
+}
+
+.contact-container .contact div{
+    margin-bottom: 20px;
+}
+
+.contact-container .subject{
+    margin-top: 30px;
+}
+
+.contact-container .contact div input,
+.contact-container .contact div textarea{
+    width: 100%;
+    padding: 15px;
+    background-color: transparent;
+    outline: none;
+    border-radius: 5px;
+    resize: none;
+    color: black;
+    border: 1px solid var(--blue-color);
+}
+
+.contact-container .contact div span{
+    color: salmon;
+}
+
+.contact-container .contact button{
+    transition: all .5s ease;
+    color: white;
+    padding: 15px;
+    background-color: #15458e;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-container .contact button:hover{
+    transition:all .5s ease;
+    background-color: #0e3269;
+    
+}
+
+@media screen and (max-width:430px) {
+    .contact-container .contact div,
+.contact-container .contact button{
+    width: 100%;
+}
+.contact-container .contact{
+    width: 95%;
+    padding: 20px;
+    margin-top: 80px;
+}
+
+.contact-container .contact > h1,
+.contact-container .contact > p{
+    text-align: center;
+}
+
+}
