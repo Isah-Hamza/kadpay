@@ -1,8 +1,8 @@
 import { Route, BrowserRouter as Router , Link, Switch } from 'react-router-dom'
-import Header from './components/header/header.jsx'
-import Landing from './pages/landing/landing.jsx';
-import Footer from './components/footer/footer.jsx';
-import Contact from './pages/contact/contact.jsx';
+import Header from './components/header/Header.jsx'
+import Landing from './pages/landing/Landing.jsx';
+import Footer from './components/footer/Footer.jsx';
+import Contact from './pages/contact/Contact.jsx';
 
 
 function App() {
