@@ -1,7 +1,7 @@
 import React from 'react';
 import './footer.css'
 
-function footer() {
+function Footer() {
   return <div className='footer-container'>
     <p>
         Copyright &copy; 2022 KadPay. All rights reserved
@@ -9,4 +9,4 @@ function footer() {
   </div>;
 }
 
-export default footer;
+export default Footer;
