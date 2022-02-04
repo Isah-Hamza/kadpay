@@ -13,6 +13,10 @@
     
 }
 
+.landingpage-container .firstlayer .right{
+    padding-left: 20px;
+}
+
 .landingpage-container .firstlayer .right img{
     width: 100%;
     height: 100%;
@@ -177,7 +181,7 @@
     border-bottom: 20px;
 }
 .landingpage-container .customer-reviews{
-    margin: 40px 0;
+    margin: 55px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -219,7 +223,7 @@
     margin-right: 5px;
 }
 .landingpage-container .reviews .indicator .circle:first-child{
-    background-color: var(--blue-color-1);
+    background-color: var(--orange-color-1);
 }
 
 .landingpage-container .customer-reviews .body{
@@ -394,10 +398,11 @@
 }
 @media screen and (max-width: 630px) {
     .landingpage-container .firstlayer .right{
-        /* display: none; */
+        padding-left: 0;
     }
     .landingpage-container .firstlayer{
         grid-template-columns: 1fr;
+        gap: 25px;
     }
     .landingpage-container .buttons{
         flex-direction: row;
@@ -409,6 +414,7 @@
     .landingpage-container .row > div{
         display: flex;
         flex-direction: column;
+        gap: 25px;
         margin-bottom: 30px;
     }
     .landingpage-container .row >div:first-child,

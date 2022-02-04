@@ -62,7 +62,8 @@
     transition: all .5s ease;
     color: white;
     padding: 15px;
-    background-color: #15458e;
+    background:linear-gradient(10deg,var(--blue-color-1),var(--blue-color-2));
+    /* background-color: #15458e; */
     outline: none;
     border: none;
     border-radius: 5px;
