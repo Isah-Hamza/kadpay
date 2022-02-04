@@ -142,7 +142,7 @@ function Landing() {
                 <img src={comfort}/>
             </div>
             <div className='right'>
-                <h3>Pay your bills with just <br/> a single<span className='primary-color'>click</span> </h3>
+                <h3>Pay your bills with just <br/> a single <span className='primary-color'>click</span> </h3>
                 <p>We provide you with a  better and faster way to pay your bills such
                 as electricity, NEPA , TV Subscription and alot more
                 with so much ease and comfort
