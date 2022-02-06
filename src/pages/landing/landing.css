@@ -8,7 +8,7 @@
 }
 .landingpage-container .firstlayer{
     display: grid;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
     grid-template-columns: repeat(2,1fr );
     
 }
@@ -28,6 +28,7 @@
 .landingpage-container .firstlayer h1{
     font-size: clamp(30px, 2.1vw + 1rem,  45px);
     margin-bottom: 30px;
+   
 }
 .landingpage-container .firstlayer > p{
     margin-bottom: 40px;
@@ -39,7 +40,7 @@
     justify-content: center;
 }
 
-.landingpage-container .firstlayer .left > p{
+.landingpage-container  p{
     line-height: 22px;
 }
 
@@ -55,8 +56,20 @@
     padding: 10px 25px;
     outline: none;
     border:none;
-    border-radius: 7px;
+    border-radius: 50px;
+    cursor: pointer;
     color: white;
+}
+
+.landingpage-container .buttons p{
+    line-height: normal;
+}
+
+.landingpage-container .buttons button div{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+
 }
 
 .landingpage-container .buttons button img{
@@ -65,24 +78,25 @@
 
 .landingpage-container .buttons button:first-child{
     background-color: var(--blue-color-1);
+    box-shadow: 0px 10px 40px 4px var(--orange-color-2);
     background:linear-gradient(10deg,var(--orange-color-1),var(--orange-color-2));
 }
 .landingpage-container .buttons button:last-child{
     background:linear-gradient(10deg,var(--blue-color-1),var(--blue-color-2));
+    box-shadow: 0px 10px 40px 4px var(--blue-color-2);
     margin-right: 0;
 }
 
 .landingpage-container .buttons img{
     width: 30px !important;
     height: 25px !important;
-    margin-right: 5px;
+    margin-right: 10px;
 }
 
 .landingpage-container .services{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    /* gap: 40px 50px; */
-    margin-bottom: 50px;
+    margin-bottom: 100px;
 }
 
 .landingpage-container .services > div img{
@@ -158,6 +172,10 @@
     object-position: center;
 }
 
+.landingpage-container .row .second{
+    margin: 50px 0;
+}
+
 .landingpage-container .row > div > div{
     display: flex;
     justify-content: center;
@@ -181,7 +199,7 @@
     border-bottom: 20px;
 }
 .landingpage-container .customer-reviews{
-    margin: 55px 0;
+    margin: 100px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -200,7 +218,7 @@
     display: flex;
     gap: 20px;
     margin-top: 40px;
-    padding-bottom: 60px;
+    padding-bottom: 70px;
     position: relative;
 }
 
@@ -282,10 +300,11 @@
     text-align: center;
     max-width: 500px;
     margin: auto;
+    margin-bottom: 50px;
 }
 .landingpage-container .subscribe h1,
 .landingpage-container .subscribe p{
-    margin-bottom: 7px;
+    margin-bottom: 10px;
 }
 .landingpage-container .subscribe h1{
     font-size: clamp(25px, 2vw + 1rem,  35px);
@@ -337,6 +356,10 @@
     margin-bottom: 15px !important;
 }
 
+.landingpage-container .firstlayer h1{
+    line-height: 40px;
+}
+
 .landingpage-container .buttons {
     margin-top: 15px ;
 }
@@ -373,8 +396,11 @@
     .landingpage-container{
         padding: 20px;
     }
+    .landingpage-container .firstlayer{
+        margin-top: 10px;
+    }
     .landingpage-container  > div h3{
-        line-height: 30px;
+        line-height: 35px;
     }
 }
 @media screen and (max-width: 715px) {
@@ -402,20 +428,32 @@
     }
     .landingpage-container .firstlayer{
         grid-template-columns: 1fr;
-        gap: 25px;
+        gap: 50px;
     }
+
+    .landingpage-container  p{
+        text-align:justify;
+    }
+
+    .landingpage-container  h1,
+    .landingpage-container h3{
+        text-align: center;
+    }
+
     .landingpage-container .buttons{
-        flex-direction: row;
+        width: 300px;
+        margin: 40px auto;
         justify-content: start;
     }
     .landingpage-container .buttons button{
         margin-right: 5px;
+        margin-bottom: 30px;
     }
     .landingpage-container .row > div{
         display: flex;
         flex-direction: column;
-        gap: 25px;
-        margin-bottom: 30px;
+        gap: 40px;
+        margin-bottom: 55px;
     }
     .landingpage-container .row >div:first-child,
     .landingpage-container .row >div:last-child{
@@ -469,7 +507,8 @@
         margin: 20px 0 40px 0;
     }
     .landingpage-container .subscribe div input{
-        margin-bottom: 5px;
+        margin-bottom: 10px;
+        width: 80%;
     }
 }
 @media screen and (max-width: 345px){

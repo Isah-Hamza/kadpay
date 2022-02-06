@@ -46,12 +46,13 @@ import Glass from '@material-ui/icons/HourglassEmpty'
 
 function Header() {
     const [open, setOpen] = useState(false);
-    const [left, setLeft] = useState('-100%');
+    const [height, setHeight] = useState('0px');
+    const headerHeight = '240px'
     const toggleOpen = () => {
         if(open)
-            setLeft('-110%');
+            setHeight('0px');
         else
-            setLeft('0%');
+            setHeight(headerHeight);
         setOpen(!open);
     }
     return (
@@ -60,7 +61,7 @@ function Header() {
             <div className='toggler'>
                 <img src={searchIcon} alt='search icon' style={{marginRight:'20px'}} />
                {!open && <img src={hamburger_icon} alt='hamburger icon' className='hamburger-icon' onClick={toggleOpen} />}
-                {open && <img src={close_icon} alt = 'close icon' className='close-icon' onClick={toggleOpen} style={{ height: '25px'}}/>}
+                {open && <img src={close_icon} alt = 'close icon' className='close-icon' onClick={toggleOpen} style={{ height: '20px'}}/>}
             </div>
             <div className='right nav-links'>
             
@@ -73,7 +74,7 @@ function Header() {
               </ul>
             
             </div>
-            { <div className='mobile-links' style={{left: left}}>
+            { <div className='mobile-links' style={{height: height}}>
                   <ul onClick={ toggleOpen }>
                     <li onClick={ toggleOpen }><Link className='active' to = '/'>Home</Link></li>
                     <li onClick={ toggleOpen }><Link to = '#'>Services</Link></li>
