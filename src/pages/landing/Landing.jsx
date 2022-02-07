@@ -23,9 +23,6 @@ function Landing() {
         reviewsRef.current.style.left = reviewsLeft;
     }
     
-    window.addEventListener('resize', () => {
-        
-    })
 
     useEffect(() => {
         if( window.innerWidth <= 500 ){

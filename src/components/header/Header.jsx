@@ -29,7 +29,7 @@ import Glass from '@material-ui/icons/HourglassEmpty'
 function Header() {
     const [open, setOpen] = useState(false);
     const [height, setHeight] = useState('0px');
-    const headerHeight = '300px'
+    const headerHeight = '275px'
     const toggleOpen = () => {
         if(open)
             setHeight('0px');

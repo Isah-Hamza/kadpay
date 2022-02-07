@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './register.css';
 
 
@@ -29,7 +30,7 @@ function Register() {
                  </div>
                  <div className='confirm_password'>
                     <label for = 'confirm_password'>Confirm Password</label>
-                    <input type= 'confirm_password' placeholder='Enter Confirmation Password' />
+                    <input type= 'password' placeholder='Enter Confirmation Password' />
                  </div>
 
                  <div className='country'>
@@ -39,7 +40,7 @@ function Register() {
                  <button type='submit' >Sign Up</button>
               </form>
               <p>Forgot your password <span> <a href='#'> Reset </a> </span> </p>
-              <p>Don't have an account yet? <span> <a href='/login'> Sign In </a></span> </p>  
+              <p>Don't have an account yet? <span> <Link to='/login'> Sign In </Link></span> </p>  
           </div>
           {/* <div className='footer'>
               <p> &copy; 2022 KadPay All Rights Reserved </p>
