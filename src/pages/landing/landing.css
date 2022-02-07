@@ -202,7 +202,10 @@
     margin: 100px 0;
     display: flex;
     flex-direction: column;
+    position: relative;
     align-items: center;
+    width: 100%;
+    overflow-x: hidden;
 }
 .landingpage-container .customer-reviews h1{
     font-size: clamp(30px, 2.1vw + 1rem,  45px);
@@ -220,9 +223,10 @@
     margin-top: 40px;
     padding-bottom: 70px;
     position: relative;
+    transition: all 1.2s ease;
 }
 
-.landingpage-container .reviews .indicator{
+.landingpage-container .customer-reviews .indicator{
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -230,17 +234,17 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    bottom: 20px;
+    bottom: 0;
 }
 
-.landingpage-container .reviews .circle{
+.landingpage-container .customer-reviews .circle{
     width: 15px;
     height: 15px;
     border: 1px solid;
     border-radius: 50%;
     margin-right: 5px;
 }
-.landingpage-container .reviews .indicator .circle:first-child{
+.landingpage-container .customer-reviews .indicator .circle:first-child{
     background-color: var(--orange-color-1);
 }
 
@@ -305,6 +309,7 @@
 .landingpage-container .subscribe h1,
 .landingpage-container .subscribe p{
     margin-bottom: 10px;
+    text-align: center;
 }
 .landingpage-container .subscribe h1{
     font-size: clamp(25px, 2vw + 1rem,  35px);
@@ -353,7 +358,7 @@
 
 .landingpage-container .firstlayer h1,
 .landingpage-container .firstlayer .left > p{
-    margin-bottom: 15px !important;
+    margin-bottom:20px !important;
 }
 
 .landingpage-container .firstlayer h1{
@@ -389,8 +394,9 @@
 .landingpage-container .services > div:nth-child(6){
     border-bottom: 0 !important;
 }
-
 }
+
+
 
 @media screen and (max-width: 760px) {
     .landingpage-container{
@@ -436,12 +442,12 @@
     }
 
     .landingpage-container  h1,
-    .landingpage-container h3{
+    .landingpage-container h3{ 
         text-align: center;
     }
 
     .landingpage-container .buttons{
-        width: 300px;
+        width: min(300px,90%);
         margin: 40px auto;
         justify-content: start;
     }
@@ -490,13 +496,17 @@
     }
     .landingpage-container .customer-reviews .reviews{
         margin-top: 20px;
+        width: 200%;
+        left: 51%;
+        grid-gap: 10px;
+        padding-bottom: 50px;
     }
     .landingpage-container .reviews > div{
         width: 100% !important;
     }
-    .landingpage-container .reviews > div:nth-child(2){
+    /* .landingpage-container .reviews > div:nth-child(2){
         display: none;
-    }
+    } */
 }
 @media screen and (max-width: 400px){
     .landingpage-container{

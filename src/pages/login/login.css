@@ -1,0 +1,106 @@
+.login-container{
+    display: flex;
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    margin-top: 70px;
+}
+
+.login-container > *{
+    width: 50%;
+}
+
+.login-container .left{
+    background:linear-gradient(10deg,var(--blue-color-1),var(--blue-color-2));
+    opacity: .5;
+}
+
+.login-container .right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.login-container .right img{
+    width: 200px;
+    height: 70px;
+}
+
+.login-container .right .login-details{
+    display: flex;
+    flex-direction: column;
+    /* background: white; */
+    padding:  20px ;
+    border-radius: 7px;
+    width: min(500px, 95%);
+}
+
+.login-container .login-details .user{
+    transform:scale(3);
+    fill: var(--blue-color-2);
+}
+.login-container .login-details span{
+    margin-right:  auto;
+    margin-left: auto;
+    margin-bottom: 30px;
+}
+.login-container .right .login-details p{
+    text-align: center;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.login-container .right .login-details h2{
+    text-align: center;
+    letter-spacing: 1px;
+    margin-bottom: 35px;
+}
+
+.login-container .right form{
+    margin: 25px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-container .right form div{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+.login-container .right form label{
+    margin-bottom: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.login-container .right form input{
+    width: 100%;
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+    padding: 15px 10px;
+}
+.login-container .right button{
+    padding: 15px 50px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 25px;
+    background:linear-gradient(10deg,var(--blue-color-1),var(--blue-color-2));
+    color: white;
+    margin-inline: auto;
+    border: none;
+}
+
+@media screen and (max-width: 780px) {
+    .login-container .left{
+        display: none;
+    }
+    .login-container .right{
+        width: 100%;
+        padding: 20px 0 50px 0;
+    }
+    .login-container .right img{
+        width: 175px;
+        height: 70px;
+    }
+}

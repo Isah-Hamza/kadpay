@@ -1,0 +1,102 @@
+.registration-container{
+    display: flex;
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    margin-top: 70px;
+}
+
+.registration-container > *{
+    width: 50%;
+}
+
+.registration-container .left{
+    background:linear-gradient(10deg,var(--blue-color-1),var(--blue-color-2));
+    opacity: .5;
+}
+
+.registration-container .right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.registration-container .right img{
+    width: 200px;
+    height: 70px;
+}
+
+.registration-container .right .registration-details{
+    display: flex;
+    flex-direction: column;
+    /* background: white; */
+    padding:  20px ;
+    border-radius: 7px;
+    width: min(500px, 95%);
+}
+
+.registration-container .right .registration-details p{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.registration-container .right .registration-details h2{
+    text-align: center;
+    margin-bottom: 35px;
+    letter-spacing: 1px;
+}
+
+.registration-container .registration-details .user{
+    transform:scale(3);
+    fill: var(--blue-color-2);
+}
+.registration-container .registration-details span{
+    margin-right:  auto;
+    margin-left: auto;
+    margin-bottom: 30px;
+}
+
+.registration-container .right form{
+    margin: 25px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.registration-container .right form div{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+.registration-container .right form label{
+    margin-bottom: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.registration-container .right form input{
+    width: 100%;
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+    padding: 15px 10px;
+}
+.registration-container .right button{
+    padding: 15px 50px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 25px;
+    background:linear-gradient(10deg,var(--blue-color-1),var(--blue-color-2));
+    color: white;
+    margin-inline: auto;
+    border: none;
+}
+
+@media screen and (max-width: 780px) {
+    .registration-container .left{
+        display: none;
+    }
+    .registration-container .right{
+        width: 100%;
+        padding: 20px 0 50px 0;
+    }
+}

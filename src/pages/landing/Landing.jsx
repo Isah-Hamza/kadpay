@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{ useState, useRef, useEffect} from 'react';
 import './landing.css';
 import mobileAppIcon from '../../images/img/mobileAppIcon-removebg-preview.png';
 import google from '../../images/img/playstore.png';
@@ -15,6 +15,64 @@ import slant_and_portrait from '../../images/img/slant and portrait.png';
 
 
 function Landing() {
+
+    const [ reviewsLeft, setReviewsLeft ] = useState('51%');
+    const reviewsRef = useRef();
+
+    const changeLeft = () => {
+        reviewsRef.current.style.left = reviewsLeft;
+    }
+    
+    window.addEventListener('resize', () => {
+        
+    })
+
+    useEffect(() => {
+        if( window.innerWidth <= 500 ){
+            changeLeft();
+            const timer = setTimeout(() => {
+                reviewsLeft == '51%' ? setReviewsLeft('-51%') : setReviewsLeft('51%')
+            }, 5000);
+            return () => {
+                clearTimeout(timer);
+            }
+        }
+
+        //check using resize event listener to see if the browser had been resized to a width below 500
+        window.addEventListener('resize', () => {
+            if( window.innerWidth <= 500 ){
+                changeLeft();
+                const timer = setTimeout(() => {
+                    reviewsLeft == '51%' ? setReviewsLeft('-51%') : setReviewsLeft('51%')
+                }, 5000);
+                return () => {
+                    clearTimeout(timer);
+                }
+            }
+        })
+      
+    });
+    
+    useEffect(() => {
+            if( window.innerWidth > 500 ) {
+                setReviewsLeft('unset');
+                changeLeft();
+                console.log('reviews left called');
+                return
+            }
+            
+            window.addEventListener('resize', () => {
+                if( window.innerWidth > 500 ) {
+                    setReviewsLeft('unset');
+                    changeLeft();
+                    console.log('reviews left called');
+                    return
+                }
+            })
+            return;
+            
+});
+
   return <div className='landingpage-container'>
     <div className='firstlayer'>
         <div className='left'>
@@ -157,7 +215,7 @@ function Landing() {
     <div className='customer-reviews'>
         <h1>What people are <span className='primary-color'>saying</span> </h1>
         <p>We are trusted by millions around the globe</p>
-        <div className='reviews'>
+        <div className='reviews' ref={reviewsRef}>
             <div className='review'>
                 <div className='body'>
                 <div className='top-circle'></div>
@@ -184,11 +242,11 @@ function Landing() {
                     <span>Grace Clara</span>
                 </div>
             </div>
+        </div>
             <div className='indicator'>
                 <div className='circle'></div>
                 <div className='circle'></div>
             </div>
-        </div>
     </div>
     <div className='subscribe'>
         <h1>Subscribe to our <span className='primary-color'>Newsletter</span> </h1>
