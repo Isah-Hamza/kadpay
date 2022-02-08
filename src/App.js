@@ -5,6 +5,7 @@ import Footer from './components/footer/Footer.jsx';
 import Contact from './pages/contact/Contact.jsx';
 import Login from './pages/login/Login.jsx';
 import Register from './pages/register/Register.jsx';
+import Blog from './pages/blog/Blog.jsx';
 
 function App() {
   return (
@@ -16,6 +17,8 @@ function App() {
         <Route path='/contact-us' component={() => <Contact /> } exact />
         <Route path='/login' component={() => <Login /> } exact />
         <Route path='/register' component={() => <Register /> } exact />
+        <Route path='/blog' component={() => <Blog /> } exact />
+        {/* <Route path='/blog' component={() => <BlogTemplate /> } exact /> */}
       </Switch>
       <Footer />
     </Router>
