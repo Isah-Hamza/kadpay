@@ -17,58 +17,88 @@ import slant_and_portrait from '../../images/img/slant and portrait.png';
 function Landing() {
 
     const [ reviewsLeft, setReviewsLeft ] = useState('51%');
+    const [ windoWidth, setWindowWidth ] = useState(window.innerWidth);
     const reviewsRef = useRef();
 
     const changeLeft = () => {
         reviewsRef.current.style.left = reviewsLeft;
     }
     
-
-    useEffect(() => {
-        if( window.innerWidth <= 500 ){
-            changeLeft();
-            const timer = setTimeout(() => {
-                reviewsLeft == '51%' ? setReviewsLeft('-51%') : setReviewsLeft('51%')
-            }, 5000);
-            return () => {
-                clearTimeout(timer);
-            }
-        }
-
-        //check using resize event listener to see if the browser had been resized to a width below 500
-        window.addEventListener('resize', () => {
-            if( window.innerWidth <= 500 ){
-                changeLeft();
-                const timer = setTimeout(() => {
-                    reviewsLeft == '51%' ? setReviewsLeft('-51%') : setReviewsLeft('51%')
-                }, 5000);
-                return () => {
-                    clearTimeout(timer);
-                }
-            }
-        })
+    // useEffect(() => {
       
-    });
+    //     const handleResize = () => {
+    //         setWindowWidth(window.innerWidth)
+    //         console.log(windoWidth, 'window width')
+
+    //         if(windoWidth > 500){
+    //             setReviewsLeft('unset');
+    //             changeLeft();
+    //         }
+    //         else{
+    //             setReviewsLeft('51%');
+    //             const timer = setInterval(() => {
+    //                 reviewsLeft == '51%' ? setReviewsLeft('-51%') : setReviewsLeft('51%')
+    //             }, 3000);
+    //             changeLeft();
+    //             return () => {
+    //                 clearTimeout(timer);
+    //             }
+    //         }
+    //     };
+    //     window.addEventListener('resize', handleResize);
+        
+    //     return () => {
+    //         window.removeEventListener('resize', handleResize);
+    //   }
+
+    // })
     
-    useEffect(() => {
-            if( window.innerWidth > 500 ) {
-                setReviewsLeft('unset');
-                changeLeft();
-                console.log('reviews left called');
-                return
-            }
+
+//     useEffect(() => {
+//         if( window.innerWidth <= 500 ){
+//             changeLeft();
+//             const timer = setTimeout(() => {
+//                 reviewsLeft == '51%' ? setReviewsLeft('-51%') : setReviewsLeft('51%')
+//             }, 5000);
+//             return () => {
+//                 clearTimeout(timer);
+//             }
+//         }
+
+//         //check using resize event listener to see if the browser had been resized to a width below 500
+//         window.addEventListener('resize', () => {
+//             if( window.innerWidth <= 500 ){
+//                 changeLeft();
+//                 const timer = setTimeout(() => {
+//                     reviewsLeft == '51%' ? setReviewsLeft('-51%') : setReviewsLeft('51%')
+//                 }, 5000);
+//                 return () => {
+//                     clearTimeout(timer);
+//                 }
+//             }
+//         })
+      
+//     });
+    
+//     useEffect(() => {
+//             if( window.innerWidth > 500 ) {
+//                 setReviewsLeft('unset');
+//                 changeLeft();
+//                 console.log('reviews left called');
+//                 return
+//             }
             
-            window.addEventListener('resize', () => {
-                if( window.innerWidth > 500 ) {
-                    setReviewsLeft('unset');
-                    changeLeft();
-                    console.log('reviews left called');
-                    return
-                }
-            })
-            return;
+//             window.addEventListener('resize', () => {
+//                 if( window.innerWidth > 500 ) {
+//                     setReviewsLeft('unset');
+//                     changeLeft();
+//                     console.log('reviews left called');
+//                     return
+//                 }
+//             })
+//             return;
             
-});
+// });
 
   return <div className='landingpage-container'>
     <div className='firstlayer'>

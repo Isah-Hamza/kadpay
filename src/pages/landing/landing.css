@@ -9,7 +9,7 @@
 .landingpage-container .firstlayer{
     display: grid;
     margin-bottom: 100px;
-    grid-template-columns: repeat(2,1fr );
+    grid-template-columns: repeat(2,1fr);
     
 }
 
@@ -41,7 +41,7 @@
 }
 
 .landingpage-container  p{
-    line-height: 22px;
+    line-height: 25px;
 }
 
 .landingpage-container .buttons{
@@ -210,6 +210,10 @@
 .landingpage-container .customer-reviews h1{
     font-size: clamp(30px, 2.1vw + 1rem,  45px);
     margin-bottom: 10px;
+}
+
+.landingpage-container .customer-reviews p{
+    text-align: center;
 }
 
 .landingpage-container .customer-reviews .review{

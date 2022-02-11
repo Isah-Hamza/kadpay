@@ -1,5 +1,48 @@
 .footer-container{
-    padding: 30px 40px;
     border-top: 1px solid gainsboro;
-    text-align: center;
+    text-align: center; 
+    padding:50px 15px 30px ;
+}
+
+p{
+    line-height: 25px;
+}
+
+.footer-container > div {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+}
+
+.footer-container .social-media p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-container > div > div p:first-child{
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer-container .social-media .color{
+    margin-right: 5px;
+}
+
+.footer-container > div{
+    margin-bottom: 50px;
+}
+
+.footer-container > p:last-child{
+    font-weight: bold;
+}
+
+@media screen and (max-width: 900px) {
+    .footer-container > div {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px 0;
+        margin-bottom: 30px;
+    }
+
+  
 }

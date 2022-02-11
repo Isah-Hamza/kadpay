@@ -1,0 +1,245 @@
+p{
+    line-height: 25px;
+}
+.color{
+    color: var(--blue-color-1);
+}
+.services-container{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+    margin-bottom: 30px;
+}
+.services-container .easy-payment{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 70px;
+    width: min(1100px, 95%);
+    margin-inline: auto;
+}
+
+.services-container .easy-payment .left img{
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+    object-position: center;
+    background-color: var(--blue-color-1);
+    margin-right: 10px;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.services-container .easy-payment .right {
+    width: 50%;
+}
+.services-container .easy-payment .right img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.services-container .easy-payment h1{
+    font-size: clamp(30px, 2.5vw + 1rem , 45px);
+    color: var(--blue-color-1) ;
+    margin-bottom: -5px;
+}
+.services-container .easy-payment h2{
+    font-size: clamp(26px, 1.9vw + 1rem , 35px);
+}
+
+.services-container .easy-payment p{
+    line-height: 25px;
+    margin: 30px 0;
+}
+
+.services-container .services{
+    display: flex;
+    flex-direction: column;
+    width: min(1000px, 95%);
+    margin-right: auto;
+    margin-bottom: 60px;
+    margin-left: auto;
+    text-align: center;
+}
+
+.services-container .services h1{
+    
+}
+
+.services-container .services p{
+    margin: 30px 0 50px 0;
+}
+
+.services-container .services-listing{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.services-container .services-listing > div{
+    border: 1px solid gainsboro ;
+    border-radius: 4px;
+    padding: 20px 10px;
+    box-shadow: 1px 2px 8px -4px;
+    cursor: pointer;
+}
+
+.services-container .services-listing > div p{
+    margin: initial;
+    margin-bottom: 5px;
+}
+
+.services-container .services-listing > div p:first-child{
+    text-transform: capitalize;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.services-container .why-kadpay{
+    width: min(1200px , 95%);
+    text-align: center;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+.services-container  .why-kadpay > p{
+    margin: 20px 0;
+    width: min(800px , 95%);
+    text-align: center;
+    align-self: center;
+}
+
+.services-container .why-kadpay .left img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.services-container .why-kadpay > div{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 30px;
+}
+
+.services-container .why-kadpay .header{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+.services-container .why-kadpay > div .right{
+    display: flex;
+    flex-direction: column;
+    text-align: left !important;
+    padding-left: 15px;
+}
+
+.services-container .why-kadpay .MuiSvgIcon-root{
+    margin-bottom: -5px;
+    margin-right: 10px;
+}
+.services-container .why-kadpay > div .right p {
+    margin: 10px 0 0;
+}
+
+.services-container .why-kadpay > div .right > div {
+    margin-bottom: 20px;
+}
+
+.services-container .why-kadpay > div .right p:first-of-type {
+}
+
+.services-container .why-kadpay button{
+    padding: 15px 35px;
+    margin-top: 10px;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    width: fit-content;
+    cursor: pointer;
+    transition:  .5s ease all;
+    font-size: 15px;
+    background:linear-gradient(10deg,var(--blue-color-1),var(--blue-color-2));
+}
+
+.services-container .why-kadpay button:hover{
+    transition: .5s ease all;
+    opacity: 0.7;
+}
+
+.services-container .why-kadpay > p{
+    margin: 30px 0 45px ;
+}
+
+@media screen and (max-width: 950px) {
+    .services-container .services-listing{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .services-container .easy-payment br{
+        display: none;
+    }
+    .services-container .easy-payment p{
+        margin: 15px 0 25px;
+        text-align: justify;
+    }
+    .services-container{
+        margin-top: 70px;
+    }
+    .services-container .easy-payment{
+        display: grid;
+        justify-content: center;
+        text-align: center;
+        gap: 50px;
+    }
+
+    .services-container .easy-payment h1 {
+        margin-bottom: -2px;
+    }
+    .services-container .easy-payment .right{
+        margin-inline: auto;
+        align-self: center;
+        width: 100%;
+    }
+    
+    .services-container .why-kadpay > div  .right{
+        text-align: justify !important; 
+        padding-left: 10px !important;
+        padding-right: 10px;
+    }
+    .services-container .services-listing{
+        grid-template-columns: 1fr;
+    }
+
+    .services-container .services > p{
+        text-align: justify;
+        margin: 20px 0 40px ;
+    }
+    .services-container .why-kadpay > div{
+        grid-template-columns: 1fr;
+    }
+    .services-container .why-kadpay > div .left{
+        margin-bottom: 50px;
+        text-align: center;
+
+    }
+   
+    .services-container .why-kadpay > div .right p:first-of-type,
+    .services-container .why-kadpay > div .right button{
+        /* text-align: center; */
+        align-self: center;
+    }
+    .services-container .why-kadpay p{
+        text-align: justify;
+        margin: 20px 0 30px ;
+    }
+    .services-container .why-kadpay > div .right > div{
+        margin-bottom: 30px;
+    }
+}

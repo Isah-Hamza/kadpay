@@ -6,6 +6,7 @@ import Contact from './pages/contact/Contact.jsx';
 import Login from './pages/login/Login.jsx';
 import Register from './pages/register/Register.jsx';
 import Blog from './pages/blog/Blog.jsx';
+import Services from './pages/services/Services.jsx';
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
         <Route path='/login' component={() => <Login /> } exact />
         <Route path='/register' component={() => <Register /> } exact />
         <Route path='/blog' component={() => <Blog /> } exact />
-        {/* <Route path='/blog' component={() => <BlogTemplate /> } exact /> */}
+        <Route path='/services' component={() => <Services /> } exact />
       </Switch>
       <Footer />
     </Router>
