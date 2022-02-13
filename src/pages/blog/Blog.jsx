@@ -6,6 +6,9 @@ import image1 from '../../images/img/image1.jpg';
 import image2 from '../../images/img/image2.jpg';
 import image3 from '../../images/img/image3.webp';
 
+import ArrowRight from '@material-ui/icons/KeyboardArrowRightRounded';
+import ArrowLeft from '@material-ui/icons/KeyboardArrowLeftRounded';
+
 
 function Blog() {
     
@@ -45,37 +48,41 @@ function Blog() {
 
   return <div className='blog-container'>
 
-    <div className='categories'>
-        <p className='active'>All</p>
-        <p>Marketing</p>
-        <p>Politics</p>
-    </div>
-    <div className='blogs'>
-    {
-        blogs.map(blog => {
-            console.log(blog)
-            return <BlogTemplate blog = {blog} key = {blog.id} />
-        })
-        }
-     {   
-         blogs.map(blog => {
-            console.log(blog)
-            return <BlogTemplate blog = {blog} key = {blog.id} />
-        })
-        }
+        <div className='categories'>
+            <p className='active'>All</p>
+            <p>Marketing</p>
+            <p>Politics</p>
+        </div>
+        <div className='blogs'>
+        {
+            blogs.map(blog => {
+                console.log(blog)
+                return <BlogTemplate blog = {blog} key = {blog.id} />
+            })
+            }
+        {   
+            blogs.map(blog => {
+                console.log(blog)
+                return <BlogTemplate blog = {blog} key = {blog.id} />
+            })
+            }
+            {
+                blogs.map(blog => {
+                console.log(blog)
+                return <BlogTemplate blog = {blog} key = {blog.id} />
+            })
+            }
         {
             blogs.map(blog => {
             console.log(blog)
             return <BlogTemplate blog = {blog} key = {blog.id} />
         })
         }
-    {
-        blogs.map(blog => {
-        console.log(blog)
-        return <BlogTemplate blog = {blog} key = {blog.id} />
-    })
-    }
-    </div>
+        </div>
+        <div className='controls'>
+            <button className='back' ><ArrowLeft/><ArrowLeft/></button>
+            <button className='forward' > <ArrowRight/><ArrowRight/> </button>
+        </div>
 
   </div>;
 }

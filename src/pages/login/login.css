@@ -80,6 +80,10 @@
     border-radius: 5px;
     padding: 15px 10px;
 }
+
+.login-container .right form input:focus{
+    outline: 1px solid var(--blue-color-1);
+}
 .login-container .right button{
     padding: 15px 50px;
     border-radius: 5px;

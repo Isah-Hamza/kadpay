@@ -23,7 +23,9 @@ import EmailIcon from '@material-ui/icons/Email';
 import Account from '@material-ui/icons/AccountCircleSharp';
 import Clock from '@material-ui/icons/Timer';
 import Fire from '@material-ui/icons/FireplaceSharp';
-import Glass from '@material-ui/icons/HourglassEmpty'
+import Glass from '@material-ui/icons/HourglassEmpty';
+import Close from '@material-ui/icons/Close';
+import Hamburger from '@material-ui/icons/Menu';
 
 function Header() {
     const [open, setOpen] = useState(false);
@@ -41,8 +43,8 @@ function Header() {
             <div className = "logo left"><img src={logo} alt='logo'/></div>
             <div className='toggler'>
                 <img src={searchIcon} alt='search icon' style={{marginRight:'20px'}} />
-               {!open && <img src={hamburger_icon} alt='hamburger icon' className='hamburger-icon' onClick={toggleOpen} />}
-                {open && <img src={close_icon} alt = 'close icon' className='close-icon' onClick={toggleOpen} style={{ height: '20px'}}/>}
+               {!open && <Hamburger  alt='hamburger icon' className='hamburger-icon' onClick={toggleOpen} />}
+                {open && <Close alt = 'close icon' className='close-icon' onClick={toggleOpen} />}
             </div>
             <div className='right nav-links'>
             

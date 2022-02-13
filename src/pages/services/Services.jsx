@@ -11,6 +11,7 @@ import service from '../../images/img/service.png';
 import HeadsetIcon from '@material-ui/icons/Headset';
 import FlightIcon from '@material-ui/icons/Flight';
 import HealthAndSafetyIcon from '@material-ui/icons/VerifiedUser';
+import ArrowRight from '@material-ui/icons/KeyboardArrowRightRounded';
 
 function Services() {
   return (
@@ -46,6 +47,7 @@ function Services() {
                         <p>GLO VTU</p>
                         <p>AIRTEL VTU</p>
                         <p>9MOBILE VTU</p>
+                        <ArrowRight /> <ArrowRight />
                     </div>
 
                     <div>
@@ -55,6 +57,7 @@ function Services() {
                         <p>AIRTEL DATA</p>
                         <p>9MOBILE DATA</p>
                         <p>SMILE DATA</p>
+                        <ArrowRight /> <ArrowRight />
                     </div>
 
                     <div>
@@ -62,6 +65,7 @@ function Services() {
                         <p>GOTV</p>
                         <p>DSTV</p>
                         <p>STARTIMES</p>
+                        <ArrowRight /> <ArrowRight />
                     </div>
 
                     <div>
@@ -74,6 +78,7 @@ function Services() {
                         <p>IBEDC</p>
                         <p>JEDpLc</p>
                         <p>KAEDCO</p>
+                        <ArrowRight /> <ArrowRight />
                     </div>
                 </div>
             </div>

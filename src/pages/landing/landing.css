@@ -3,8 +3,11 @@
 }
 
 .landingpage-container {
-    padding: 20px 50px;
+    padding: 20px 0px;
     margin: 70px 0 0;
+    width: min(1200px, 95%);
+    margin-right: auto;
+    margin-left: auto;
 }
 .landingpage-container .firstlayer{
     display: grid;
@@ -26,7 +29,7 @@
 }
 
 .landingpage-container .firstlayer h1{
-    font-size: clamp(30px, 2.1vw + 1rem,  45px);
+    font-size: clamp(29px, 2.1vw + 1rem,  45px);
     margin-bottom: 30px;
    
 }
@@ -182,7 +185,7 @@
     flex-direction: column;
 }
 .landingpage-container .row > div > div h3{
-    font-size: clamp(30px, 2.1vw + 1rem,  45px);
+    font-size: clamp(29px, 2.1vw + 1rem,  45px);
 
 }
 
@@ -212,7 +215,7 @@
     margin-bottom: 10px;
 }
 
-.landingpage-container .customer-reviews p{
+.landingpage-container .customer-reviews > p{
     text-align: center;
 }
 
@@ -404,7 +407,7 @@
 
 @media screen and (max-width: 760px) {
     .landingpage-container{
-        padding: 20px;
+        /* padding: 20px; */
     }
     .landingpage-container .firstlayer{
         margin-top: 10px;
@@ -429,7 +432,7 @@
         padding: 5px 15px 15px;
     }
     .landingpage-container{
-        padding: 20px 15px;
+        padding: 20px 0px;
     }
 }
 @media screen and (max-width: 630px) {
@@ -514,7 +517,7 @@
 }
 @media screen and (max-width: 400px){
     .landingpage-container{
-        padding: 15px 10px;
+        padding: 15px 0;
     }
     .landingpage-container .subscribe div{
         flex-direction: column;

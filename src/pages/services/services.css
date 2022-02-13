@@ -58,7 +58,7 @@ p{
     flex-direction: column;
     width: min(1000px, 95%);
     margin-right: auto;
-    margin-bottom: 60px;
+    margin-bottom: 70px;
     margin-left: auto;
     text-align: center;
 }
@@ -80,9 +80,10 @@ p{
 .services-container .services-listing > div{
     border: 1px solid gainsboro ;
     border-radius: 4px;
-    padding: 20px 10px;
+    padding: 20px 10px 25px;
     box-shadow: 1px 2px 8px -4px;
     cursor: pointer;
+    position: relative;
 }
 
 .services-container .services-listing > div p{
@@ -90,6 +91,18 @@ p{
     margin-bottom: 5px;
 }
 
+.services-container .services-listing > div .MuiSvgIcon-root{
+    position: absolute;
+    fill: var(--blue-color-1);
+    bottom: -19px;
+    left: 50%;
+    font-size: 35px;
+    transform: translateX(-50%);
+}
+
+.services-container .services-listing > div .MuiSvgIcon-root:first-of-type{
+    left: 47%;
+}
 .services-container .services-listing > div p:first-child{
     text-transform: capitalize;
     font-weight: bold;
@@ -217,6 +230,9 @@ p{
         grid-template-columns: 1fr;
     }
 
+    .services-container .services-listing > div .MuiSvgIcon-root:first-of-type{
+        left: 48%;
+    }
     .services-container .services > p{
         text-align: justify;
         margin: 20px 0 40px ;

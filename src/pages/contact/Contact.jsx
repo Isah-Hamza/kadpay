@@ -4,7 +4,7 @@ import './contact.css';
 function Contact() {
   return <div className='contact-container'>
             <div class="contact">
-                <h1>KadPay contact <span className='primary-color'>page</span> </h1>
+                <h1>KadPay Contact <span className='primary-color'>Page</span> </h1>
                 <p class="enquiry">For inquiries, suggestions and complains. Mail us at: </p>
                 <p class="email">info@kadpay@yahoo.com</p>
                 <div class="subject">
