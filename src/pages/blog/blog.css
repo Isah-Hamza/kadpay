@@ -29,6 +29,7 @@
 .blog-container .controls{
     margin-right: auto;
     margin-left: auto;
+    margin-bottom: 50px;
 }
 
 .blog-container .controls button{
@@ -44,7 +45,9 @@
     box-shadow: 0px 4px 13px 4px var(--orange-color-2);
 
 }
-
+.blog-container .controls button:last-child{
+    margin-right: 0;
+}
 .blog-container .controls button svg{
     position: absolute;
     width: 20px;
