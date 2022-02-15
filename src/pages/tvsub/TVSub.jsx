@@ -33,7 +33,7 @@ function TVSub() {
             <div>
                 <img src= { startime } />
                 <div>
-                    <p>STARTIMES Subscription</p>
+                    <p>Startimes Subscription</p>
                     <p>Choose from a range of STARTIMES bouquets for your entertainment. Easy payment, quick value delivery.</p>
                 </div>
             </div>
@@ -41,7 +41,7 @@ function TVSub() {
             <div>
                 <img src= { showmax } />
                 <div>
-                    <p>SHOWMAX Subscription</p>
+                    <p>Showmax Subscription</p>
                     <p>Choose from a range of SHOWMAX bouquets for your entertainment. Easy payment, quick value delivery.</p>
                 </div>
             </div>

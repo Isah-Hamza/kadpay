@@ -70,6 +70,7 @@ function Services() {
                         <p>GOTV</p>
                         <p>DSTV</p>
                         <p>STARTIMES</p>
+                        <p>SHOWMAX</p>
                         <ArrowRight /> <ArrowRight />
                     </div>
                 </Link>

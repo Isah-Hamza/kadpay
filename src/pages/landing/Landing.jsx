@@ -1,4 +1,6 @@
 import React,{ useState, useRef, useEffect} from 'react';
+import { Link } from 'react-router-dom';
+ 
 import './landing.css';
 import mobileAppIcon from '../../images/img/mobileAppIcon-removebg-preview.png';
 import google from '../../images/img/playstore.png';
@@ -6,12 +8,12 @@ import apple from '../../images/img/apple.png';
 import airtime from '../../images/img/airtime.png';
 import paybills from '../../images/img/paybills.png';
 import secure from '../../images/img/secure.png';
-import slantphone from '../../images/img/slanthpne.png';
-import dullbaby from '../../images/img/dullbaby.png';
 import comfort from '../../images/img/comfort.png';
 import review1 from '../../images/review1.jpg';
 import review2 from '../../images/review2.jpg';
 import slant_and_portrait from '../../images/img/slant and portrait.png';
+import Account from '@material-ui/icons/AccountCircleSharp';
+import Services from '@material-ui/icons/Work';
 
 
 function Landing() {
@@ -112,19 +114,20 @@ function Landing() {
             </p>
             <div className='buttons'>
                 <button className='google-play'>
-                    <img src={google}/>
-                    <div>
-                        <p>Get it on</p>
-                        <p>Google Play</p>
-                    </div>
+                    <Link to = '/services'>
+                        <div>
+                            <p><Services /></p>
+                            <p>Our Services</p>
+                        </div>
+                    </Link>
                 </button>
-
                 <button className='google-play'>
-                    <img src={apple}/>
-                    <div>
-                        <p>Get it on</p>
-                        <p>Play Store</p>
-                    </div>
+                    <Link to = '/login'>
+                        <div>
+                            <p><Account /></p>
+                            <p>Login</p>
+                        </div>
+                    </Link>
                 </button>
             </div>
         </div>

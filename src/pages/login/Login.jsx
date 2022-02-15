@@ -24,6 +24,10 @@ function Login() {
                     <label for = 'password'>Password</label>
                     <input type= 'password' placeholder='Enter Password' />
                  </div>
+                 <div className='otp'>
+                    <label for = 'otp'>OTP Pin</label>
+                    <input type= 'password' placeholder='Enter OTP Pin' />
+                 </div>
                  <button type='submit' >Login</button>
               </form>
               <p>Forgot your password <span> <a href='#'> Reset </a> </span> </p>

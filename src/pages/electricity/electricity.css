@@ -16,12 +16,18 @@
     display: flex;
     height: 40px;
     padding-left: 10px;
+    padding-right: 10px;
     margin-top: 20px;
     margin-bottom: 10px;
     width: min(85%, 300px);
     margin-right: auto;
     margin-left: auto;
     overflow: hidden !important ;
+}
+
+.electricity-container select{
+    caret-color: red;
+    
 }
 
 .electricity-container select:focus{
@@ -66,7 +72,7 @@
 @media screen and (max-width: 1000px) {
     .electricity-container .electricity-services{
         grid-template-columns: repeat(2, 1fr);
-        padding: 30px 15px;
+        padding: 30px 20px;
         gap: 40px 25px;
     }
 }
@@ -74,8 +80,8 @@
 @media screen and (max-width: 630px) {
     .electricity-container .electricity-services{
         grid-template-columns: 1fr;
-        padding: 30px 20px;
-        gap: 40px ;
+        padding: 30px 15px;
+        gap: 35px ;
     }
     .electricity-container .electricity-services > div{
         padding: 20px 10px;

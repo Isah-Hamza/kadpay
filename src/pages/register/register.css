@@ -74,14 +74,21 @@
     font-weight: bold;
     letter-spacing: 1px;
 }
-.registration-container .right form input{
+.registration-container .right form input,
+.registration-container .right form select{
     width: 100%;
     border: 1px solid gainsboro;
     border-radius: 5px;
     padding: 15px 10px;
 }
 
-.registration-container .right form input:focus{
+.registration-container .right form select{
+    color: black;
+}
+
+
+.registration-container .right form input:focus,
+.registration-container .right form select:focus{
     outline: 1px solid var(--blue-color-1);
 }
 

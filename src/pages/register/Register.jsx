@@ -35,8 +35,22 @@ function Register() {
 
                  <div className='country'>
                     <label for = 'country'>Country</label>
-                    <input type= 'country' placeholder='Enter country' />
+                    <input type= 'text' placeholder='Enter country' />
                  </div>
+
+                 <div className='acc-type'>
+                    <label for = 'type'>Accoun Type</label>
+                    <select name='state'  id = 'state'>
+                        <option name = '' value='Select Account Type'> Select Account Type </option>
+                        <option name = 'pos_merchant' value='pos_merchant'> POS Merchant Account</option>
+                        <option name = 'personal' value='personal'> Personal Account</option>
+                        <option name = 'Premium' value='Premium'> Premium Account</option>
+                        <option name = 'business' value='business'> Business Account</option>
+                        <option name = 'merchant' value='merchant'> Merchant Account</option>
+                        
+                  </select>
+                 </div>
+
                  <button type='submit' >Sign Up</button>
               </form>
               <p>Forgot your password <span> <a href='#'> Reset </a> </span> </p>

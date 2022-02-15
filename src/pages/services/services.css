@@ -66,10 +66,6 @@ p{
     text-align: center;
 }
 
-.services-container .services h1{
-    
-}
-
 .services-container .services p{
     margin: 30px 0 50px 0;
 }
@@ -172,9 +168,6 @@ p{
 
 .services-container .why-kadpay > div .right > div {
     margin-bottom: 20px;
-}
-
-.services-container .why-kadpay > div .right p:first-of-type {
 }
 
 .services-container .why-kadpay button{

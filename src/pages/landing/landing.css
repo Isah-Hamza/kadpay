@@ -62,21 +62,41 @@
     border-radius: 50px;
     cursor: pointer;
     color: white;
+    width: 170px;
 }
 
 .landingpage-container .buttons p{
     line-height: normal;
 }
 
+.landingpage-container .firstlayer .buttons button div{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    font-size: 13.5px;
+}
+
+.landingpage-container .firstlayer button a{
+    text-decoration: none;
+    color: inherit;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
 .landingpage-container .buttons button div{
     display: flex;
     align-items: flex-start;
     flex-direction: column;
-
 }
 
-.landingpage-container .buttons button img{
+.landingpage-container .buttons img{
     filter: invert(1);
+}
+
+.landingpage-container .buttons svg{
+    margin-right: 10px;
 }
 
 .landingpage-container .buttons button:first-child{
@@ -406,9 +426,7 @@
 
 
 @media screen and (max-width: 760px) {
-    .landingpage-container{
-        /* padding: 20px; */
-    }
+
     .landingpage-container .firstlayer{
         margin-top: 10px;
     }
@@ -424,12 +442,16 @@
         margin-bottom: 40px;
         justify-content: center;
         margin-right: 0;
+        width: unset;
+    }
+    .landingpage-container .firstlayer button a{
+        justify-content: center;
     }
     .landingpage-container .firstlayer .right img{
         object-fit: cover;
     }
     .landingpage-container .services > div{
-        padding: 5px 15px 15px;
+        padding: 5px 5px 15px;
     }
     .landingpage-container{
         padding: 20px 0px;
@@ -511,9 +533,9 @@
     .landingpage-container .reviews > div{
         width: 100% !important;
     }
-    /* .landingpage-container .reviews > div:nth-child(2){
-        display: none;
-    } */
+    .landingpage-container .customer-reviews .body{
+        padding: 20px 10px;
+    }
 }
 @media screen and (max-width: 400px){
     .landingpage-container{

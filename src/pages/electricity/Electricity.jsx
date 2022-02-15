@@ -18,6 +18,9 @@ function Electricity() {
         <select name='state'  id = 'state'>
             <option name = '' value=''> Select your state </option>
             <option name = 'kogi' value='kogi'> Kogi</option>
+            <option name = 'Nassarawa' value='Nassarawa'> Nassarawa</option>
+            <option name = 'Benin' value='Benin'> Benin</option>
+            <option name = 'Jigawa' value='Jigawa'> Jigawa</option>
             <option name = 'Niger' value='Niger'> Niger</option>
             <option name = 'Abuja' value='kogi'> Abuja</option>
             <option name = 'Kano' value='Kano'> Kano</option>
