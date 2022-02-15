@@ -73,10 +73,6 @@
 }
 
 
-
-
-
-
 .header-container .toggler{
     display: none;
 }
@@ -93,7 +89,7 @@
 }
 .header-container .mobile-links ul{
     padding: 0 20px;
-
+    margin-top: 7px;
 }
 .header-container .mobile-links ul li{
     padding: 11px;

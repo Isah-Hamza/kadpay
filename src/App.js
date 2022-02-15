@@ -7,6 +7,9 @@ import Login from './pages/login/Login.jsx';
 import Register from './pages/register/Register.jsx';
 import Blog from './pages/blog/Blog.jsx';
 import Services from './pages/services/Services.jsx';
+import Airtime from './pages/airtime/Airtime.jsx';
+import TVSub from './pages/tvsub/TVSub.jsx';
+import Electricity from './pages/electricity/Electricity.jsx';
 
 function App() {
   return (
@@ -20,6 +23,9 @@ function App() {
         <Route path='/register' component={() => <Register /> } exact />
         <Route path='/blog' component={() => <Blog /> } exact />
         <Route path='/services' component={() => <Services /> } exact />
+        <Route path='/services/airtime' component={() => <Airtime /> } exact />
+        <Route path='/services/tvsub' component={() => <TVSub /> } exact />
+        <Route path='/services/electricity' component={() => <Electricity /> } exact />
       </Switch>
       <Footer />
     </Router>

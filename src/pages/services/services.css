@@ -31,6 +31,9 @@ p{
     padding: 10px;
 }
 
+.services-container .easy-payment .left img:last-of-type{
+    margin-right: 0;
+}
 .services-container .easy-payment .right {
     width: 50%;
 }
@@ -77,7 +80,13 @@ p{
     gap: 30px;
 }
 
-.services-container .services-listing > div{
+.services-container .services-listing a{
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+.services-container .services-listing  div{
+    height: 100%;
     border: 1px solid gainsboro ;
     border-radius: 4px;
     padding: 20px 10px 25px;
@@ -86,24 +95,27 @@ p{
     position: relative;
 }
 
-.services-container .services-listing > div p{
+.services-container .services-listing  div p{
     margin: initial;
     margin-bottom: 5px;
 }
 
-.services-container .services-listing > div .MuiSvgIcon-root{
+.services-container .services-listing  div .MuiSvgIcon-root{
     position: absolute;
-    fill: var(--blue-color-1);
-    bottom: -19px;
+    fill: white;
+    background-color: var(--blue-color-1);
+    border-radius: 50%;
+    bottom: -18px;
     left: 50%;
     font-size: 35px;
     transform: translateX(-50%);
 }
 
-.services-container .services-listing > div .MuiSvgIcon-root:first-of-type{
+.services-container .services-listing  div .MuiSvgIcon-root:first-of-type{
     left: 47%;
+    display: none;
 }
-.services-container .services-listing > div p:first-child{
+.services-container .services-listing  div p:first-child{
     text-transform: capitalize;
     font-weight: bold;
     margin-bottom: 10px;
@@ -151,7 +163,7 @@ p{
 }
 
 .services-container .why-kadpay .MuiSvgIcon-root{
-    margin-bottom: -5px;
+    margin-bottom: -13px;
     margin-right: 10px;
 }
 .services-container .why-kadpay > div .right p {
@@ -228,10 +240,12 @@ p{
     }
     .services-container .services-listing{
         grid-template-columns: 1fr;
+        gap: 40px;
     }
 
     .services-container .services-listing > div .MuiSvgIcon-root:first-of-type{
         left: 48%;
+        display: none;
     }
     .services-container .services > p{
         text-align: justify;

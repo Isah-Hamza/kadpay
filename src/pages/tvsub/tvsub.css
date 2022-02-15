@@ -1,0 +1,63 @@
+.tvsub-container{
+    margin-top: 100px;
+    width: min(1100px, 95%);
+    margin-inline: auto;
+}
+.tvsub-container > p,
+.tvsub-container > h2{
+    text-align: center;
+}
+.tvsub-container h2{
+    margin-bottom: 10px;
+}
+.tvsub-container .tvsub-services{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px 30px  ;
+    padding: 50px;
+    background:rgba(32, 205, 243, .2);
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+
+.tvsub-container .tvsub-services > div{
+    display: flex;
+    align-items: center;
+    border: 1px solid orange;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.tvsub-container .tvsub-services > div p{
+    line-height: 20px !important;
+}
+
+.tvsub-container .tvsub-services > div img{
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+}
+
+.tvsub-container .tvsub-services > div > div p:first-of-type{
+    font-weight: bold;
+}
+
+.tvsub-container .tvsub-services > div > div p:last-of-type{
+    font-size: 13px;
+}
+
+@media screen and (max-width: 1000px) {
+    .tvsub-container .tvsub-services{
+        grid-template-columns: repeat(2, 1fr);
+        padding: 30px 15px;
+        gap: 40px 25px;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .tvsub-container .tvsub-services{
+        grid-template-columns: 1fr;
+        padding: 30px 20px;
+        gap: 40px ;
+    }
+}

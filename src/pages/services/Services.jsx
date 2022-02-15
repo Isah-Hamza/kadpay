@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './services.css';
 
 import mobile from '../../images/img/mobile.png';
@@ -41,25 +42,29 @@ function Services() {
                 fast service delivery and easy payment is just at your fingertips.</p>
 
                 <div className='services-listing'>
-                    <div>
-                        <p>Buy phone Airtime</p>
-                        <p>MTN VTU</p>
-                        <p>GLO VTU</p>
-                        <p>AIRTEL VTU</p>
-                        <p>9MOBILE VTU</p>
-                        <ArrowRight /> <ArrowRight />
-                    </div>
+                    <Link to= '/services/airtime'>
+                        <div> 
+                                <p>Buy phone Airtime</p>
+                                <p>MTN VTU</p>
+                                <p>GLO VTU</p>
+                                <p>AIRTEL VTU</p>
+                                <p>9MOBILE VTU</p>
+                                <ArrowRight /> <ArrowRight />
+                        </div>
+                    </Link>
+                    <Link>
+                        <div>
+                            <p>Buy Internet Data</p>
+                            <p>MTN DATA</p>
+                            <p>GLO DATA</p>
+                            <p>AIRTEL DATA</p>
+                            <p>9MOBILE DATA</p>
+                            <p>SMILE DATA</p>
+                            <ArrowRight /> <ArrowRight />
+                     </div>
+                    </Link>
 
-                    <div>
-                        <p>Buy Internet Data</p>
-                        <p>MTN DATA</p>
-                        <p>GLO DATA</p>
-                        <p>AIRTEL DATA</p>
-                        <p>9MOBILE DATA</p>
-                        <p>SMILE DATA</p>
-                        <ArrowRight /> <ArrowRight />
-                    </div>
-
+                <Link to= '/services/tvsub'>
                     <div>
                         <p>Pay TV Subs</p>
                         <p>GOTV</p>
@@ -67,7 +72,8 @@ function Services() {
                         <p>STARTIMES</p>
                         <ArrowRight /> <ArrowRight />
                     </div>
-
+                </Link>
+                <Link to = '/services/electricity'>
                     <div>
                         <p>Pay Electricity Bill</p>
                         <p>PHED</p>
@@ -80,6 +86,7 @@ function Services() {
                         <p>KAEDCO</p>
                         <ArrowRight /> <ArrowRight />
                     </div>
+                </Link>
                 </div>
             </div>
 
