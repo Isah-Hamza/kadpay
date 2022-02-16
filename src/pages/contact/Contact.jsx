@@ -6,7 +6,7 @@ function Contact() {
             <div class="contact">
                 <h1>KadPay Contact <span className='primary-color'>Page</span> </h1>
                 <p class="enquiry">For inquiries, suggestions and complains. Mail us at: </p>
-                <p class="email">info@kadpay@yahoo.com</p>
+                <p class="email">info@kadpay.com</p>
                 <div class="subject">
                     <p>Subject <span>*</span></p>
                     <input type="text" name="subject" id="subject" />

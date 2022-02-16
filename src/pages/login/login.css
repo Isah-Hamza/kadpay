@@ -74,14 +74,16 @@
     font-weight: bold;
     letter-spacing: 1px;
 }
-.login-container .right form input{
+.login-container .right form input,
+.login-container .right form select{
     width: 100%;
     border: 1px solid gainsboro;
     border-radius: 5px;
     padding: 15px 10px;
 }
 
-.login-container .right form input:focus{
+.login-container .right form input:focus,
+.login-container .right form select:focus{
     outline: 1px solid var(--blue-color-1);
 }
 .login-container .right button{
@@ -101,7 +103,7 @@
     }
     .login-container .right{
         width: 100%;
-        padding: 20px 0 50px 0;
+        padding-bottom: 50px;
     }
     .login-container .right img{
         width: 175px;

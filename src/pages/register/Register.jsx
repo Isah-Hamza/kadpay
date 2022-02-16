@@ -39,7 +39,7 @@ function Register() {
                  </div>
 
                  <div className='acc-type'>
-                    <label for = 'type'>Accoun Type</label>
+                    <label for = 'type'>Account Type</label>
                     <select name='state'  id = 'state'>
                         <option name = '' value='Select Account Type'> Select Account Type </option>
                         <option name = 'pos_merchant' value='pos_merchant'> POS Merchant Account</option>

@@ -15,7 +15,9 @@ function TVSub() {
 
         <div className='tvsub-services'>
             <div>
-                <img src= { dstv } />
+                
+                    <img src= { dstv } />
+                
                 <div>
                     <p>DSTV Subscription</p>
                     <p>Choose from a range of DStv bouquets for your entertainment. Easy payment, quick value delivery.</p>

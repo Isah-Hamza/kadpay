@@ -93,7 +93,7 @@ function Services() {
 
             <div className='why-kadpay' >
                 <h1>Why <span className='color'>KadPay?</span> </h1>
-                <p> KadPay.com is Nigeria’s top payment platform providing fast, easy online payment solution for millions of
+                <p> KadPay.com is world top payment platform providing fast, easy online payment solution for millions of
                     people. We are impacting lives by ensuring payments for day-to-day services you enjoy are
                     stress-free. With KadPay.com, you can perform quick transactions anytime and anywhere using any device.</p>
                 <div>

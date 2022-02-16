@@ -86,7 +86,6 @@
     color: black;
 }
 
-
 .registration-container .right form input:focus,
 .registration-container .right form select:focus{
     outline: 1px solid var(--blue-color-1);
@@ -109,7 +108,7 @@
     }
     .registration-container .right{
         width: 100%;
-        padding: 20px 0 50px 0;
+        padding-bottom: 50px ;
     }
     .registration-container .right .registration-details{
         padding: 20px 10px;

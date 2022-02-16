@@ -26,7 +26,7 @@ function Footer() {
           <p>Developers</p>
         </div>
         <div>
-          <p>Contact </p>
+          <p>Contact Info.</p>
           <p>07065786031</p>
           <p>info@kadpay.com</p>
           <p>21 A, Apapa road, Ikeja,</p>

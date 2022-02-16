@@ -1,0 +1,143 @@
+.about-container{
+    margin-top: 70px;
+}
+
+.about-container .about-header{
+    width: 100%;
+    height: 250px;
+    background-image: url('../../images/img/page-header.jpg');
+    background-position: center;
+    background-origin: center;
+    flex-direction: column;
+    color: white;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-container .about-us{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: min(1200px, 95%);
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 70px;
+    gap: 20px;
+}
+
+.about-container  .about-us img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: right;
+}
+
+.about-container .about-us .description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.about-container .about-us .description > p,
+.about-container .about-us .description > h1{
+    margin-bottom: 20px;
+}
+.about-container .about-us .info{
+    display: flex;
+    text-align: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.about-container .about-us .info p{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-container .about-us .info h1{
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.about-container .faq{
+    /* display: flex;
+    justify-content: space-between; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: start;
+    grid-auto-rows: minmax(min-content, max-content);
+    grid-auto-rows: fit-content(1em);
+    width: min(1200px, 95%);
+    margin:0 auto 70px;
+    gap: 30px;
+}
+
+.about-container .faq > div {
+    /* width: 45%; */
+    height: max-content;
+    align-self: start;
+}
+.about-container .faq div h2{
+    padding: 10px 5px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.about-container .faq div p{
+    max-height: 0;
+    overflow: hidden;
+    transition: all .7s ease;
+    transform-origin: top;
+    transition: all .4s ease-in-out;
+    
+}
+
+.about-container .faq div p.open{
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    padding: 10px 5px;
+    max-height: 200px;
+    transition: all .4s ease-in-out;
+    height: auto;
+}
+
+.about-container .faq div h2:hover,
+.about-container .faq div h2.open{
+    background-color: var(--blue-color-1);
+}
+
+@media screen and (max-width: 1070px) {
+    .about-container .faq h2{
+        font-size: 20px;
+    }
+}
+
+
+@media screen and (max-width: 780px) {
+    .about-container .about-us,
+    .about-container .faq {
+        grid-template-columns: 1fr;
+    }
+    .about-container .about-us .info h1{
+        font-size: 35px;
+    }
+    .about-container .about-us .info span{
+        line-height: 18px;
+        margin-top: 5px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .about-container .faq h2{
+        font-size: 17px;
+    }
+    .about-container .about-us .info{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+}

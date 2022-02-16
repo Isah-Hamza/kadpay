@@ -52,7 +52,7 @@ function Header() {
                   <li ><Link className='active' to = '/'>Home</Link></li>
                   <li><Link to = '/services'>Services</Link></li>
                   <li><Link to = '/blog'>Blog</Link></li>
-                  <li><Link to = '#'>About us</Link></li>
+                  <li><Link to = '/about-us'>About us</Link></li>
                   <li><Link to = '/contact-us'>Contact us</Link></li>
                   <li><Link to = '/login'>Login</Link></li>
               </ul>
@@ -63,7 +63,7 @@ function Header() {
                     <li onClick={ toggleOpen }><Link className='active' to = '/'>Home</Link></li>
                     <li onClick={ toggleOpen }><Link to = '/services'>Services</Link></li>
                     <li onClick={ toggleOpen }><Link to = '/blog'>Blog</Link></li>
-                    <li onClick={ toggleOpen }><Link to = '#'>About us</Link></li>
+                    <li onClick={ toggleOpen }><Link to = '/about-us'>About us</Link></li>
                     <li onClick={ toggleOpen }><Link to = '/contact-us'>Contact us</Link></li>
                     <li onClick={ toggleOpen }><Link to = '/login'>Login</Link></li>
                   </ul>

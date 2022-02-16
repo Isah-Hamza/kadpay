@@ -3,6 +3,7 @@ import Header from './components/header/Header.jsx'
 import Landing from './pages/landing/Landing.jsx';
 import Footer from './components/footer/Footer.jsx';
 import Contact from './pages/contact/Contact.jsx';
+import About from './pages/about/About.jsx';
 import Login from './pages/login/Login.jsx';
 import Register from './pages/register/Register.jsx';
 import Blog from './pages/blog/Blog.jsx';
@@ -19,6 +20,7 @@ function App() {
       <Switch>
         <Route path='/' component={() => <Landing /> } exact />
         <Route path='/contact-us' component={() => <Contact /> } exact />
+        <Route path='/about-us' component={() => <About /> } exact />
         <Route path='/login' component={() => <Login /> } exact />
         <Route path='/register' component={() => <Register /> } exact />
         <Route path='/blog' component={() => <Blog /> } exact />
