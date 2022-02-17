@@ -27,10 +27,10 @@ function Footer() {
         </div>
         <div>
           <p>Contact Info.</p>
-          <p>07065786031</p>
+          <p>+2237065786031</p>
           <p>info@kadpay.com</p>
-          <p>21 A, Apapa road, Ikeja,</p>
-          <p>Lagos Nigeria</p>
+          <p>21 A, London Bridge,</p>
+          <p>London, United Kindgdom</p>
         </div>
         <div className='social-media'>
           <p>Follow us on social media </p>

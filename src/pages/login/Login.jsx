@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Account from '@material-ui/icons/AccountCircleSharp';
+import LoginIcon from '@material-ui/icons/LockTwoTone';
 import './login.css';
 
 
@@ -10,7 +10,7 @@ function Login() {
         <div className='right'>
           <div className='login-details'>
                   <h2>User Login</h2>
-                  <span><Account className='user'/></span>
+                  <span><LoginIcon className='user'/></span>
               <form>
                  <div className='email'>
                     <label for = 'email'>Email</label>

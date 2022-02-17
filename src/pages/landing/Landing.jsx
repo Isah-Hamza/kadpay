@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
  
 import './landing.css';
 import mobileAppIcon from '../../images/img/mobileAppIcon-removebg-preview.png';
+import atmCard from '../../images/img/atmcard.png';
 import google from '../../images/img/playstore.png';
 import apple from '../../images/img/apple.png';
 import airtime from '../../images/img/airtime.png';
@@ -183,7 +184,7 @@ function Landing() {
     <div className='row'>
         <div className='first'>
             <div className='left'>
-                <img src={comfort}/>
+                <img src={atmCard} alt= 'atm card' />
             </div>
             <div className='right'>
                 <h3>Pay with so much <br/> <span className='primary-color'>Comfort</span></h3>

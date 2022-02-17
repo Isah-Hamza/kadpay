@@ -74,9 +74,12 @@
     display: flex;
     align-items: center;
     flex-direction: row;
-    font-size: 13.5px;
+    font-size: 14px;
 }
 
+.landingpage-container h1, .landingpage-container h3{
+    text-transform: capitalize;
+}
 .landingpage-container .firstlayer button a{
     text-decoration: none;
     color: inherit;
