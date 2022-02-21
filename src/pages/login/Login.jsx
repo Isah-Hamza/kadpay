@@ -11,13 +11,13 @@ function Login() {
           <div className='login-details'>
                   <h2>User Login</h2>
                   <span><LoginIcon className='user'/></span>
-              <form>
+              <form action='/dashboard' >
                  <div className='email'>
-                    <label for = 'email'>Email</label>
+                    <label htmlFor = 'email'>Email</label>
                     <input type= 'email' placeholder='user@example.com' />
                  </div>
                  <div className='acc-type'>
-                    <label for = 'type'>I'm Operating </label>
+                    <label htmlFor = 'type'>I'm Operating </label>
                     <select name='account_type'  id = 'account_type'>
                         <option name = '' value='Select Account Type'> Select Account Type </option>
                         <option name = 'pos_merchant' value='pos_merchant'> POS Merchant Account</option>
@@ -28,11 +28,11 @@ function Login() {
                   </select>
                  </div>
                  <div className='password'>
-                    <label for = 'password'>Password</label>
+                    <label htmlFor = 'password'>Password</label>
                     <input type= 'password' placeholder='Enter Password' />
                  </div>
                  <div className='otp'>
-                    <label for = 'otp'>OTP Pin</label>
+                    <label htmlFor = 'otp'>OTP Pin</label>
                     <input type= 'password' placeholder='Enter OTP Pin' />
                  </div>
                  <button type='submit' >Login</button>

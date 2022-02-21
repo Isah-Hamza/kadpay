@@ -3,7 +3,6 @@ import './blogTemplate.css';
 
 function BlogTemplate({ blog }) {
     const { id, title, image, category, subCategory, descripton, time } = blog;
-        console.log('blog template');
   return <div className='blogtemplate-container'>
     <div className='blogtemplate'>
         <img src= {image} />

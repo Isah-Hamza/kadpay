@@ -52,7 +52,7 @@ function Services() {
                                 <ArrowRight /> <ArrowRight />
                         </div>
                     </Link>
-                    <Link>
+                    <Link to = '#'>
                         <div>
                             <p>Buy Internet Data</p>
                             <p>MTN DATA</p>

@@ -105,6 +105,21 @@ const [symbol, setSymbol] = useState('+');
           </div>
 
           <div>
+            <h2 ref={question}> How To Use Our Service? <span> + </span> </h2>
+            <p >KadPay.com is world's top payment platform providing fast, easy online payment solution for millions of
+                people. We are impacting lives by ensuring payments for day-to-day services you enjoy are
+                stress-free. With KadPay.com, you can perform quick transactions anytime and anywhere using any device.</p>
+          </div>
+
+          <div>
+            <h2 ref={question}> How To Create A New Account? <span> + </span> </h2>
+            <p >KadPay.com is world's top payment platform providing fast, easy online payment solution for millions of
+                people. We are impacting lives by ensuring payments for day-to-day services you enjoy are
+                stress-free. With KadPay.com, you can perform quick transactions anytime and anywhere using any device.</p>
+          </div>
+
+
+          <div>
             <h2 ref={question}> How Can I keep My Account Safe? <span> + </span> </h2>
             <p >KadPay.com is world's top payment platform providing fast, easy online payment solution for millions of
                 people. We are impacting lives by ensuring payments for day-to-day services you enjoy are

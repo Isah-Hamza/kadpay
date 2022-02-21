@@ -17,29 +17,29 @@ function Register() {
                   <span><Account className='user'/></span>
               <form>
                  <div className='email'>
-                    <label for = 'email'>Email</label>
+                    <label htmlFor = 'email'>Email</label>
                     <input type= 'email' placeholder='user@example.com' />
                  </div>
                  <div className='phone'>
-                    <label for = 'phone'>Phone Number</label>
+                    <label htmlFor = 'phone'>Phone Number</label>
                     <input type= 'text' placeholder='Enter Phone Number ' />
                  </div>
                  <div className='password'>
-                    <label for = 'password'>Password</label>
+                    <label htmlFor = 'password'>Password</label>
                     <input type= 'password' placeholder='Enter Password' />
                  </div>
                  <div className='confirm_password'>
-                    <label for = 'confirm_password'>Confirm Password</label>
+                    <label htmlFor = 'confirm_password'>Confirm Password</label>
                     <input type= 'password' placeholder='Enter Confirmation Password' />
                  </div>
 
                  <div className='country'>
-                    <label for = 'country'>Country</label>
+                    <label htmlFor = 'country'>Country</label>
                     <input type= 'text' placeholder='Enter country' />
                  </div>
 
                  <div className='acc-type'>
-                    <label for = 'type'>Account Type</label>
+                    <label htmlFor = 'type'>Account Type</label>
                     <select name='state'  id = 'state'>
                         <option name = '' value='Select Account Type'> Select Account Type </option>
                         <option name = 'pos_merchant' value='pos_merchant'> POS Merchant Account</option>

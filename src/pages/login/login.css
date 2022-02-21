@@ -112,4 +112,7 @@
     .login-container .right .login-details{
         padding: 20px 10px;
     }
+    .login-container .login-details .user{
+        font-size: 1.3rem;
+    }
 }

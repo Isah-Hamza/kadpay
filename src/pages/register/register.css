@@ -103,6 +103,9 @@
 }
 
 @media screen and (max-width: 780px) {
+    .registration-container .registration-details .user{
+        font-size: 1.3rem;
+    }
     .registration-container .left{
         display: none;
     }
@@ -112,5 +115,8 @@
     }
     .registration-container .right .registration-details{
         padding: 20px 10px;
+    }
+    .login-container .login-details .user{
+        font-size: 1.3rem;
     }
 }

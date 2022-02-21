@@ -11,6 +11,7 @@ import Services from './pages/services/Services.jsx';
 import Airtime from './pages/airtime/Airtime.jsx';
 import TVSub from './pages/tvsub/TVSub.jsx';
 import Electricity from './pages/electricity/Electricity.jsx';
+import Dashboard from './pages/dashboard/Dashboard.jsx';
 
 function App() {
   return (
@@ -28,6 +29,8 @@ function App() {
         <Route path='/services/airtime' component={() => <Airtime /> } exact />
         <Route path='/services/tvsub' component={() => <TVSub /> } exact />
         <Route path='/services/electricity' component={() => <Electricity /> } exact />
+        <Route path='/dashboard' component={() => <Dashboard /> } exact />
+        <Route path='/dashboard/*' component={() => <Dashboard /> } exact />
       </Switch>
       <Footer />
     </Router>

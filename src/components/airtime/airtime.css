@@ -1,0 +1,209 @@
+
+.airtime-component-container .progress{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    justify-content: space-between;
+    padding: 20px 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.airtime-component-container .progress > div > div{
+    width: 100%;
+    height: 5px;
+    border-radius: 2px;
+    border: 1px solid rebeccapurple;
+    margin-top: 4px;
+}
+
+.airtime-component-container .progress > div > div.active{
+    background-color: rebeccapurple;
+    /* background-color: var(--orange-color-1); */
+}
+.airtime-component-container .airtime {
+    width: min(600px, 90%);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.airtime-component-container .airtime > h1,
+.airtime-component-container .airtime > p{
+    text-align: center;
+}
+
+.airtime-component-container .airtime form{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.airtime-component-container .airtime form > div{
+    display: flex;
+    flex-direction: column;
+}
+
+.airtime-component-container .airtime form > div:nth-child(3n + 1) {
+    grid-column: span 2;
+}
+
+.airtime-component-container .airtime form label{
+    margin-bottom: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.airtime-component-container .airtime form input,
+.airtime-component-container .airtime form select{
+    width: 100%;
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+    padding: 12px 10px;
+}
+
+.airtime-component-container .airtime form input:focus,
+.airtime-component-container .airtime form select:focus{
+    outline: 1px solid var(--blue-color-1);
+}
+.airtime-component-container .airtime button{
+    padding: 15px 50px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 25px;
+    background:linear-gradient(10deg,var(--blue-color-1),var(--blue-color-2));
+    color: white;
+    margin-inline: auto;
+    border: none;
+    grid-column: span 2;
+}
+
+.airtime-component-container .make-payment{
+    width: min(800px, 90%);
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 50px;
+}
+.airtime-component-container .make-payment h1{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.airtime-component-container .make-payment > div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.airtime-component-container .make-payment .supplied-info > div{
+    margin-bottom: 20px;
+}
+
+.airtime-component-container .make-payment .supplied-info > div p:first-of-type{
+    font-weight: bold;
+}
+.airtime-component-container .make-payment .supplied-info > div p:last-of-type{
+    font-size: 13px;
+    opacity: .8;
+}
+
+.airtime-component-container .make-payment .payment-mode .card{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.airtime-component-container .make-payment .payment-mode .card select{
+    width: max(100%, 200px);
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+    margin-top: 3px;
+    padding: 10px 10px;
+
+}
+
+.airtime-component-container .make-payment .payment-mode .other-options{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px 20px ;
+    margin-bottom: 50px;
+} 
+
+.airtime-component-container .make-payment .payment-mode .other-options p{
+    padding: 7px 10px  ;
+    border: none;
+    border: 1px solid var(--blue-color-1);
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.airtime-component-container .make-payment .payment-mode .buttons{
+    display: flex;
+    justify-content: space-between;
+}
+.airtime-component-container .make-payment .payment-mode .buttons button{
+    padding: 10px 15px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100px;
+}
+
+.airtime-component-container .make-payment .payment-mode .buttons button:first-of-type {
+    border: 1px solid var(--blue-color-1);
+    background-color: transparent;
+}
+.airtime-component-container .make-payment .payment-mode .buttons button:last-of-type  {
+    background-color: var(--blue-color-1);
+    color: white;
+}
+
+@media screen and (max-width:900px) {
+    .airtime-component-container .progress{
+        padding: 40px 10px 20px ;
+        margin-left: 30px;
+    }
+    .airtime-component-container .progress p{
+        line-height: 16px !important;
+    }
+}
+@media screen and (max-width:800px) {
+    .airtime-component-container .make-payment .payment-mode .other-options p{
+        padding: 7px 5px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:630px) {
+    .airtime-component-container .make-payment > div{
+        flex-direction: column;
+        gap: 40px;
+    }
+    .airtime-component-container .make-payment .supplied-info{
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+    }
+    .airtime-component-container .make-payment .payment-mode .buttons button{
+        width: 125px;
+        text-align: center;
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width:530px) {
+    .airtime-component-container .make-payment h1{
+        margin-bottom: 25px;
+    }
+    .airtime-component-container .airtime form{
+        display: flex;
+        flex-direction: column;
+    }
+    .airtime-component-container .airtime{
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 435px) {
+    .airtime-component-container .make-payment .payment-mode .other-options{
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
+    }
+}

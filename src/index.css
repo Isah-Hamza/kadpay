@@ -7,6 +7,10 @@
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+#root{
+  width: 100%;
+  overflow-x: hidden;
+}
 :root{
   --blue-color-1:#21cbf3;
   --blue-color-2:#2196F3;
@@ -37,4 +41,6 @@
 
 body{
   background-color: #f7f8f9;
+  width: 100%;
+  overflow-x: hidden;
 }

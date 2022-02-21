@@ -56,25 +56,21 @@ function Blog() {
         <div className='blogs'>
         {
             blogs.map(blog => {
-                console.log(blog)
                 return <BlogTemplate blog = {blog} key = {blog.id} />
             })
             }
         {   
             blogs.map(blog => {
-                console.log(blog)
                 return <BlogTemplate blog = {blog} key = {blog.id} />
             })
             }
             {
                 blogs.map(blog => {
-                console.log(blog)
                 return <BlogTemplate blog = {blog} key = {blog.id} />
             })
             }
         {
             blogs.map(blog => {
-            console.log(blog)
             return <BlogTemplate blog = {blog} key = {blog.id} />
         })
         }
