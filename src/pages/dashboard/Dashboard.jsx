@@ -45,14 +45,14 @@ function Dashboard () {
       <div className='username'><AccountCircle/> Guest </div>
         <div className='sidebar-links'>
         <ul>
-          <li className={path == 'home' ? 'active' : null }  onClick={ () => {history.push('/dashboard/home')}} > <HomeIcon /> Home </li>
+          <li style ={{borderBottom:'1px solid gainsboro'}} className={path == 'home' ? 'active' : null }  onClick={ () => {history.push('/dashboard/home')}} > <HomeIcon /> Home </li>
           <li> <HomeIcon /> Transfer Money </li>
           <li className={path == 'electricity' ? 'active' : null } onClick={ () => {history.push('/dashboard/electricity')}}> <AccountCircle/> Buy Electricity </li>
           <li className={path == 'data' ? 'active' : null } onClick={ () => {history.push('/dashboard/data')}}> <AccountCircle/> Buy Data </li>
           <li className={path == 'airtime' ? 'active' : null } onClick={ () => {history.push('/dashboard/airtime')}}> <AccountCircle/> Buy Airtime </li>
-          <li className={path == 'tvsub' ? 'active' : null } onClick={ () => {history.push('/dashboard/tvsub')}} > <AccountCircle  /> TV Subscription </li>
+          <li style ={{borderBottom:'1px solid gainsboro'}} className={path == 'tvsub' ? 'active' : null } onClick={ () => {history.push('/dashboard/tvsub')}} > <AccountCircle  /> TV Subscription </li>
           <li> <AccountCircle/> My Profile </li>
-          <li> <AccountCircle/> Referral </li>
+          <li style ={{borderBottom:'1px solid gainsboro'}} > <AccountCircle/> Referral </li>
         </ul>
         <button>{ !user? 'Sign In' : 'Sign Out' }</button>
         </div>

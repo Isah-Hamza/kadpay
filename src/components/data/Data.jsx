@@ -39,7 +39,7 @@ function Data() {
 
       <div className = 'service'>
          { step == 1 && <div className='data'>
-              <h1>Buy Airtime</h1>
+              <h1>Buy Data</h1>
               <p>Top-up your data on KadPay for any network</p>
               <form action = '#'>
                 <div className='network-provider'>

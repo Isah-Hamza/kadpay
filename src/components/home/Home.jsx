@@ -37,7 +37,7 @@ const Home = () => {
         </div>
         <div className='transactions'>
         <p> Transactions on your account </p>
-        <div style={{overflowX:'scroll', padding:'5px 5px 20px'}} className = 'table'>
+        <div style={{overflowX:'auto', padding:'5px 5px 20px'}} className = 'table'>
             <table border = '1px'>
                 <thead>
                     <tr>
@@ -67,7 +67,7 @@ const Home = () => {
 
                     <tr>
                         <td>3</td>
-                        <td>Electricity Bill</td>
+                        <td>Electricity</td>
                         <td>5600</td>
                         <td>503719549670</td>
                         <td>pending</td>
