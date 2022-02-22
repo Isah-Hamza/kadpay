@@ -42,7 +42,7 @@ const Home = () => {
                 <AccountBox />
                 <div>
                 <p>Account Type</p>
-                <p>Basic</p>
+                <p>Merchant</p>
                 </div>
             </div>
         </div>

@@ -1,0 +1,134 @@
+.refer-container{
+    width: min(100%, 900px);
+    margin-right: auto;
+    margin-left: auto;
+}
+.refer-container > h1{
+    margin:40px 0;
+    font-size: 30px;
+    font-weight: 200;
+    text-align: center;
+}
+
+.refer-container .refer{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    /* box-shadow: 2px 0px 8px 1px rgba(0,0,0,.5); */
+    margin-bottom: 50px;
+    background-color: hsl(150, 10%, 90%);
+
+}
+
+.refer-container .refer div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.refer-container .refer svg{
+    font-size: 64px;
+}
+.refer-container .refer p{
+    margin-bottom:5px;
+}
+
+.refer-container .sponsor p:first-child{
+    font-size: 14px;
+}
+.refer-container .refer .reference-link{
+    color: rgb(35, 180, 35);
+}
+
+.refer-container .record{
+    width: 100%;
+    padding: 20px;
+    background-color: hsl(150, 10%, 90%);
+    /* box-shadow: 2px 0px 8px 1px rgba(0,0,0,.5); */
+    margin-bottom: 70px;
+}
+
+.refer-container .record > p{
+    margin-bottom: 50px;
+    font-size: 24px;
+}
+
+.refer-container .record .head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.refer-container .record input{
+    border: 1px solid white;
+    background-color: transparent;
+    outline:  none;
+    padding: 7px 10px;
+    border-radius: 5px;
+    margin: 0 3px;
+}
+.refer-container .record .table > div {
+    overflow-x: auto;
+    margin-bottom: 20px;
+}
+.refer-container .record table{
+    width: 100%;
+    margin-bottom: 30px;
+    min-width: 550px;
+    border-style: none;
+}
+
+.refer-container .record table tr{
+    height: 50px;
+}
+
+.refer-container .record table td,
+.refer-container .record table th{
+    padding: 10px;
+    word-wrap:no-wrap;
+}
+.refer-container .record .buttons{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.refer-container .record button{
+    padding: 10px 15px;
+    border-radius: 15px;
+    outline: none;
+    cursor: pointer;
+    color: rgba(0,0,0);
+    background-color: #ccc;
+    border: none;
+    margin-left: 10px;
+}
+.refer-container .record .entries{
+    color: var(--color-light);
+}
+
+@media screen and (max-width:750px) {
+    .refer-container .record .head p:first-child {
+        margin-left: unset !important;
+        
+    }
+}
+@media screen and (max-width:500px) {
+    .refer-container {
+        text-align: center;
+    }
+    .refer-container .record .head{
+        flex-direction: column;
+        gap:40px;
+        justify-content: center;
+    }
+    .refer-container .record .buttons{
+        justify-content: center;
+    }
+}

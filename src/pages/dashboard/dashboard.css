@@ -140,11 +140,9 @@
 }
 @media screen and (max-width: 460px) {
     .dashboard-container .main#adjust-left{
-        left: 215px;
+        left: 250px;
     }
-    .dashboard-container .sidebar{
-        width: 215px;
-    }
+
 
 
 

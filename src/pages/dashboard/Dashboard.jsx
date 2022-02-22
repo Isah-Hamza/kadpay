@@ -10,6 +10,7 @@ import TvSub from '../../components/tvsub/TvSub';
 import Home from '../../components/home/Home';
 import Data from '../../components/data/Data';
 import Transfer from '../../components/transfer/Transfer';
+import Refer from '../../components/refer-iser/Refer';
 
 
 import Close from '@material-ui/icons/Close';
@@ -43,9 +44,6 @@ function Dashboard () {
     setSidbarOpen(!sidebarOpen);
   } 
 
-  function closeSideBar(){
-    setSidbarOpen(true);
-  }
 
   return (
     <div className='dashboard-container'  onClick={ !sidebarOpen ? toggleSidebarOpen : null }  >
@@ -62,8 +60,8 @@ function Dashboard () {
           <li className={path == 'data' ? 'active' : null } onClick={ () => {history.push('/dashboard/data')}}> <Public/> Buy Data </li>
           <li className={path == 'airtime' ? 'active' : null } onClick={ () => {history.push('/dashboard/airtime')}}> <Mobile/> Buy Airtime </li>
           <li style ={{borderBottom:'1px solid gainsboro'}} className={path == 'tvsub' ? 'active' : null } onClick={ () => {history.push('/dashboard/tvsub')}} > <AirPlay  /> TV Subscription </li>
-          <li> <Work/> My Profile </li>
-          <li style ={{borderBottom:'1px solid gainsboro'}} > <Autorenew/> Referral </li>
+          <li  > <Work/> My Profile </li>
+          <li style ={{borderBottom:'1px solid gainsboro'}} className={path == 'refer' ? 'active' : null } onClick={ () => {history.push('/dashboard/refer')}} > <Autorenew/> Referral </li>
         </ul>
         <button>{ !user? 'Sign In' : 'Sign Out' }</button>
         </div>
@@ -78,6 +76,7 @@ function Dashboard () {
         {path == 'home' ? <Home/> : null }
         {path == 'data' ? <Data/> : null }
         {path == 'transfer' ? <Transfer/> : null }
+        {path == 'refer' ? <Refer/> : null }
       </div>
     </div>
   )
