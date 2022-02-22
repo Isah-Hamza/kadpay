@@ -1,5 +1,5 @@
 
-.electricity-component-container .progress{
+.transfer-component-container .progress{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
@@ -9,7 +9,7 @@
     text-align: center;
 }
 
-.electricity-component-container .progress > div > div{
+.transfer-component-container .progress > div > div{
     width: 100%;
     height: 5px;
     border-radius: 2px;
@@ -17,22 +17,22 @@
     margin-top: 4px;
 }
 
-.electricity-component-container .progress > div > div.active{
+.transfer-component-container .progress > div > div.active{
     background-color: rebeccapurple;
     /* background-color: var(--orange-color-1); */
 }
-.electricity-component-container .electricity {
+.transfer-component-container .transfer {
     width: min(600px, 90%);
     margin-right: auto;
     margin-left: auto;
 }
 
-.electricity-component-container .electricity > h1,
-.electricity-component-container .electricity > p{
+.transfer-component-container .transfer > h1,
+.transfer-component-container .transfer > p{
     text-align: center;
 }
 
-.electricity-component-container .electricity form{
+.transfer-component-container .transfer form{
     display: grid;
     gap: 25px;
     grid-template-columns: repeat(2, 1fr);
@@ -40,35 +40,36 @@
     margin-bottom: 50px;
 }
 
-.electricity-component-container .electricity form > div{
+.transfer-component-container .transfer form > div{
     display: flex;
     flex-direction: column;
 }
 
-.electricity-component-container .electricity form > div:first-of-type,
-.electricity-component-container .electricity form > div:last-of-type
-{
+.transfer-component-container .transfer form > div:first-of-type,
+.transfer-component-container .transfer form > div:last-of-type,
+.transfer-component-container .transfer form > div:nth-child(2)
+ {
     grid-column: span 2;
 }
 
-.electricity-component-container .electricity form label{
+.transfer-component-container .transfer form label{
     margin-bottom: 10px;
     font-weight: bold;
     letter-spacing: 1px;
 }
-.electricity-component-container .electricity form input,
-.electricity-component-container .electricity form select{
+.transfer-component-container .transfer form input,
+.transfer-component-container .transfer form select{
     width: 100%;
     border: 1px solid gainsboro;
     border-radius: 5px;
     padding: 12px 10px;
 }
 
-.electricity-component-container .electricity form input:focus,
-.electricity-component-container .electricity form select:focus{
+.transfer-component-container .transfer form input:focus,
+.transfer-component-container .transfer form select:focus{
     outline: 1px solid var(--blue-color-1);
 }
-.electricity-component-container .electricity button{
+.transfer-component-container .transfer button{
     padding: 15px 50px;
     border-radius: 5px;
     cursor: pointer;
@@ -80,39 +81,39 @@
     grid-column: span 2;
 }
 
-.electricity-component-container .make-payment{
+.transfer-component-container .make-payment{
     width: min(800px, 90%);
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 50px;
 }
-.electricity-component-container .make-payment h1{
+.transfer-component-container .make-payment h1{
     text-align: center;
     margin-bottom: 50px;
 }
-.electricity-component-container .make-payment > div{
+.transfer-component-container .make-payment > div{
     display: flex;
     justify-content: space-between;
 }
 
-.electricity-component-container .make-payment .supplied-info > div{
+.transfer-component-container .make-payment .supplied-info > div{
     margin-bottom: 20px;
 }
 
-.electricity-component-container .make-payment .supplied-info > div p:first-of-type{
+.transfer-component-container .make-payment .supplied-info > div p:first-of-type{
     font-weight: bold;
 }
-.electricity-component-container .make-payment .supplied-info > div p:last-of-type{
+.transfer-component-container .make-payment .supplied-info > div p:last-of-type{
     font-size: 13px;
     opacity: .8;
 }
 
-.electricity-component-container .make-payment .payment-mode .card{
+.transfer-component-container .make-payment .payment-mode .card{
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
 }
-.electricity-component-container .make-payment .payment-mode .card select{
+.transfer-component-container .make-payment .payment-mode .card select{
     width: max(100%, 200px);
     border: 1px solid gainsboro;
     border-radius: 5px;
@@ -121,14 +122,14 @@
 
 }
 
-.electricity-component-container .make-payment .payment-mode .other-options{
+.transfer-component-container .make-payment .payment-mode .other-options{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 40px 20px ;
     margin-bottom: 50px;
 } 
 
-.electricity-component-container .make-payment .payment-mode .other-options p{
+.transfer-component-container .make-payment .payment-mode .other-options p{
     padding: 7px 10px  ;
     border: none;
     border: 1px solid var(--blue-color-1);
@@ -136,11 +137,11 @@
     font-size: 13px;
 }
 
-.electricity-component-container .make-payment .payment-mode .buttons{
+.transfer-component-container .make-payment .payment-mode .buttons{
     display: flex;
     justify-content: space-between;
 }
-.electricity-component-container .make-payment .payment-mode .buttons button{
+.transfer-component-container .make-payment .payment-mode .buttons button{
     padding: 10px 15px;
     outline: none;
     border: none;
@@ -149,47 +150,51 @@
     width: 100px;
 }
 
-.electricity-component-container .make-payment .payment-mode .buttons button:first-of-type {
+.transfer-component-container .make-payment .payment-mode .buttons button:first-of-type {
     border: 1px solid var(--blue-color-1);
     background-color: transparent;
 }
-.electricity-component-container .make-payment .payment-mode .buttons button:last-of-type  {
+.transfer-component-container .make-payment .payment-mode .buttons button:last-of-type  {
     background-color: var(--blue-color-1);
     color: white;
 }
 
 @media screen and (max-width:900px) {
-    .electricity-component-container .progress{
+    .transfer-component-container .progress{
         padding: 40px 10px 20px ;
         margin-left: 30px;
     }
-    .electricity-component-container .progress p{
+    .transfer-component-container .progress p{
         line-height: 16px !important;
     }
-    .electricity-component-container .progress > div{
+    .transfer-component-container .progress > div{
         display: flex;
         flex-direction: column;
         justify-content: end;
         font-size: 15px;
     }
+   .transfer-component-container .transfer > p{
+        line-height: 22px;
+        margin-top: 10px;
+    }
 }
 @media screen and (max-width:800px) {
-    .electricity-component-container .make-payment .payment-mode .other-options p{
+    .transfer-component-container .make-payment .payment-mode .other-options p{
         padding: 7px 5px;
         text-align: center;
     }
 }
 
 @media screen and (max-width:630px) {
-    .electricity-component-container .make-payment > div{
+    .transfer-component-container .make-payment > div{
         flex-direction: column;
         gap: 40px;
     }
-    .electricity-component-container .make-payment .supplied-info{
+    .transfer-component-container .make-payment .supplied-info{
         display: grid;
         grid-template-columns: 1.5fr 1fr;
     }
-    .electricity-component-container .make-payment .payment-mode .buttons button{
+    .transfer-component-container .make-payment .payment-mode .buttons button{
         width: 125px;
         text-align: center;
         padding: 15px;
@@ -197,20 +202,20 @@
 }
 
 @media screen and (max-width:530px) {
-    .electricity-component-container .make-payment h1{
+    .transfer-component-container .make-payment h1{
         margin-bottom: 25px;
     }
-    .electricity-component-container .electricity form{
+    .transfer-component-container .transfer form{
         display: flex;
         flex-direction: column;
     }
-    .electricity-component-container .electricity{
+    .transfer-component-container .transfer{
         width: 95%;
     }
 }
 
 @media screen and (max-width: 435px) {
-    .electricity-component-container .make-payment .payment-mode .other-options{
+    .transfer-component-container .make-payment .payment-mode .other-options{
         grid-template-columns: repeat(2,1fr);
         gap: 20px;
     }

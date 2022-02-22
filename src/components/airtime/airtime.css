@@ -34,7 +34,7 @@
 
 .airtime-component-container .airtime form{
     display: grid;
-    gap: 20px;
+    gap: 25px;
     grid-template-columns: repeat(2, 1fr);
     margin-top: 50px;
     margin-bottom: 50px;
@@ -160,6 +160,12 @@
     .airtime-component-container .progress{
         padding: 40px 10px 20px ;
         margin-left: 30px;
+    }
+    .airtime-component-container .progress > div{
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        font-size: 15px;
     }
     .airtime-component-container .progress p{
         line-height: 16px !important;

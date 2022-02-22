@@ -34,7 +34,7 @@
 
 .data-component-container .data form{
     display: grid;
-    gap: 20px;
+    gap: 25px;
     grid-template-columns: repeat(2, 1fr);
     margin-top: 50px;
     margin-bottom: 50px;
@@ -166,6 +166,12 @@
     }
     .data-component-container .progress p{
         line-height: 16px !important;
+    }
+    .data-component-container .progress > div{
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        font-size: 15px;
     }
 }
 @media screen and (max-width:800px) {

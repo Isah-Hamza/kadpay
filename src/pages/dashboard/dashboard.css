@@ -18,11 +18,17 @@
     height: 100%;
 }
 
+.dashboard-container .sidebar  ul li:nth-child(odd) svg{
+    color: var(--blue-color-1);
+}
+.dashboard-container .sidebar  ul li:nth-child(even) svg{
+    color: var(--pink-color-1);
+}
+
 .dashboard-container .toggler{
     display: none;
     align-items: center;
     justify-content: flex-end;
-    margin-bottom: 10px;
     padding-top: 10px;
 }
 
@@ -30,12 +36,13 @@
     font-size: 30px;
     color: var(--blue-color-1);
     cursor: pointer;
-    /* margin-bottom: 5px; */
+    background-color: white;
 }
 
 .dashboard-container .sidebar .sidebar-links{
     display: flex;
     flex-direction: column;
+    padding-bottom: 50px;
 }
 .dashboard-container .sidebar .username{
     /* height: 50px; */
@@ -80,6 +87,10 @@
 .dashboard-container .sidebar ul li.active{
     background: var(--blue-color-1);
     color:#000;
+}
+
+.dashboard-container .sidebar ul li.active svg{
+    color :white;
 }
 
 .dashboard-container .sidebar ul li.active:hover{

@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import './data.css'
+import './transfer.css';
 
-function Data() {
+
+function Transfer() {
     const [step, setStep] = useState(1);
 
     const incrementStep = () => {
@@ -21,7 +22,7 @@ function Data() {
       return transactionID;
     }
   return (
-    <div className='data-component-container'>
+    <div className='transfer-component-container'>
           <div className='progress'>
           <div>
             <p>1. Enter Information</p>
@@ -38,33 +39,36 @@ function Data() {
         </div>
 
       <div className = 'service'>
-         { step == 1 && <div className='data'>
-              <h1>Buy Data</h1>
-              <p>Top-up your data on KadPay for any network</p>
+         { step == 1 && <div className='transfer'>
+              <h1>Transfer Money</h1>
+              <p>Transfer money to family, friends and clients. Simply fill out this form ...</p>
               <form action = '#'>
-                <div className='network-provider'>
-                    <label htmlFor = 'type'>Network Provider</label>
-                    <select name='network_provider'  id = 'network_provider'>
-                        <option name = '' value='Select Network Provider'> Select Network Provider </option>
-                        <option name = 'mtn' value='mtn'> MTN</option>
-                        <option name = 'glo' value='glo'> Glo</option>     
-                        <option name = 'airtel' value='airtel'> Airtel</option>     
-                        <option name = '9mobile' value='9mobile'> 9Mobile</option>     
-                        <option name = 'smile' value='smile'> Smile</option>     
+                <div className='recpeint_bank'>
+                    <label htmlFor = 'recepient_bank'>Select Recepient Bank</label>
+                    <select name='recepient_bank'  id = 'recepient_bank'>
+                        <option name = '' value='Select Recepient Bank'> Select Receipt Bank </option>
+                        <option name = 'Gtb' value='Gtb'> GTB</option>
+                        <option name = 'Zenith' value='Zenith'> Zenith</option>     
+                        <option name = 'FirstBank' value='FirstBank'> FirstBank</option>     
+                        <option name = 'UBA' value='UBA'> UBA</option>     
+                        <option name = 'Union' value='Union'> Union</option>     
                     </select>
                  </div>
 
-                 <div className='bundle'>
-                    <label htmlFor = 'bundle'>Select Bundle</label>
-                    <select name='bundle'  id = 'bundle'>
-                        <option name = '' value='Select Bundle'> Select Network Provider </option>
-                        <option name = 'mtn_100mb' value='mtn_100mb'> MTN 100mb for #100</option>
-                        <option name = 'mtn_500mb' value='mtn_500mb'> MTN 500mb for #300</option>     
-                        <option name = 'mtn_1gb' value='mtn_1gb'> MTN 1GB for #500</option>     
-                        <option name = 'mtn_1.5gb' value='mtn_1.5gb'> MTN 1.5GB for #1000</option>     
-                        <option name = 'mtn_2gb' value='mtn_2gb'> MTN 2GB for #1500</option>     
-                    </select>
-                 </div>
+                 <div>
+                  <label htmlFor='account_number'>Receipt Account Number</label>
+                  <input type='text' placeholder = 'Enter account number here...'/>
+                </div>
+
+                <div>
+                  <label htmlFor='account_name'>Account Name</label>
+                  <input type='text' id = 'account_name' placeholder = 'Enter amount here...'/>
+                </div>
+
+                 <div>
+                  <label htmlFor='amount'>Amount</label>
+                  <input type='text' placeholder = 'Enter amount here...'/>
+                </div>
 
                 <div>
                   <label htmlFor='recepient_phone'>Receipt Number</label>
@@ -89,8 +93,16 @@ function Data() {
             <div>
             <div className = 'supplied-info'>
               <div>
-                <p>Network Provider</p>
-                <p>MTN</p>
+                <p>Recepient Bank</p>
+                <p>Zenith</p>
+              </div>
+              <div>
+                <p>Recepient Account Number</p>
+                <p>0222222951</p>
+              </div>
+              <div>
+                <p>Account Name</p>
+                <p>John Doe</p>
               </div>
               <div>
                 <p>Transaction ID</p>
@@ -101,7 +113,11 @@ function Data() {
                 <p>500</p>
               </div>
               <div>
-                <p>Phone Number</p>
+                <p>Recepient Phone Number</p>
+                <p>07012345678</p>
+              </div>
+              <div>
+                <p>Notification Phone Number</p>
                 <p>09034324334</p>
               </div>
               <div>
@@ -136,4 +152,4 @@ function Data() {
   )
 }
 
-export default Data
+export default Transfer

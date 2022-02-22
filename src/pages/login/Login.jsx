@@ -11,7 +11,7 @@ function Login() {
           <div className='login-details'>
                   <h2>User Login</h2>
                   <span><LoginIcon className='user'/></span>
-              <form action='/dashboard' >
+              <form action ='/dashboard' >
                  <div className='email'>
                     <label htmlFor = 'email'>Email</label>
                     <input type= 'email' placeholder='user@example.com' />
@@ -19,7 +19,7 @@ function Login() {
                  <div className='acc-type'>
                     <label htmlFor = 'type'>I'm Operating </label>
                     <select name='account_type'  id = 'account_type'>
-                        <option name = '' value='Select Account Type'> Select Account Type </option>
+                        <option name = '' value=''> Select Account Type </option>
                         <option name = 'pos_merchant' value='pos_merchant'> POS Merchant Account</option>
                         <option name = 'personal' value='personal'> Personal Account</option>
                         <option name = 'Premium' value='Premium'> Premium Account</option>

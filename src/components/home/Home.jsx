@@ -1,6 +1,7 @@
 import React from 'react';
-import './home.css'
-import about from '../../images/img/about-us.jpg';
+import './home.css';
+
+import { Redeem, Autorenew, MonetizationOn, AccountBox } from '@material-ui/icons'
 
 const Home = () => {
   return (
@@ -10,24 +11,39 @@ const Home = () => {
         <div className='user-details'>
 
             <div>
+                <MonetizationOn />
+                <div>
                 <p>Wallet</p>
                 <p>$0.00</p>
+                </div>
             </div>
             <div>
+                <MonetizationOn />
+                <div>
                 <p>Profit</p>
                 <p>$0.00</p>
+                </div>
             </div>
             <div>
+                <Autorenew />
+                <div>
                 <p>Ref Bonus</p>
                 <p>$0.00</p>
+                </div>
             </div>
             <div>
+                <MonetizationOn />
+                <div>
                 <p>Total Balance</p>
                 <p>$0.00</p>
+                </div>
             </div>
             <div>
+                <AccountBox />
+                <div>
                 <p>Account Type</p>
                 <p>Basic</p>
+                </div>
             </div>
         </div>
         <div className='youtube-video'>
@@ -43,7 +59,7 @@ const Home = () => {
                     <tr>
                         <th>s/n</th>
                         <th>Service</th>
-                        <th>Amount deducted</th>
+                        <th> Amount </th>
                         <th>Transaction ID</th>
                         <th>Status</th>
                     </tr>
@@ -51,11 +67,12 @@ const Home = () => {
                 <tbody>
                     <tr>
                         <td>1</td>
-                        <td>Airtime</td>
-                        <td>2000</td>
-                        <td>877797737789</td>
+                        <td>Transfer</td>
+                        <td>5500</td>
+                        <td>746849373647</td>
                         <td>completed</td>
                     </tr>
+
 
                     <tr>
                         <td>2</td>
@@ -71,6 +88,14 @@ const Home = () => {
                         <td>5600</td>
                         <td>503719549670</td>
                         <td>pending</td>
+                    </tr>
+
+                    <tr>
+                        <td>4</td>
+                        <td>Airtime</td>
+                        <td>2000</td>
+                        <td>877797737789</td>
+                        <td>completed</td>
                     </tr>
                 </tbody>
             </table>

@@ -30,15 +30,27 @@
 
 .home-container .user-details > div{
     display: flex;
-    flex-direction: column;
     border-right: 1px solid white;
-    padding-left: 25px;
+    padding: 20px 0 20px 25px;
+    align-items: center;
 }
 
+
+.home-container .user-details > div svg{
+    margin-right: 10px;
+    font-size: 40px;
+}
+
+.home-container .user-details > div:nth-child(odd) svg{
+    color: var(--blue-color-1);
+}
+.home-container .user-details > div:nth-child(even) svg{
+    color: var(--pink-color-1);
+}
 .home-container .user-details > div p:first-of-type{
     font-size: 14px;
     opacity: .8;
-    margin-bottom: 10px;
+    margin-bottom: 2px;
 }
 
 .home-container .user-details > div p:last-of-type{
@@ -88,7 +100,8 @@
 .home-container .transactions table tr:nth-child(even){
     background-color: hsl(150, 10%, 90%);
 }
-.home-container .transactions table td{
+.home-container .transactions table td,
+.home-container .transactions table th{
     padding: 5px 10px;
 }
 @media screen and (max-width: 555px) {
@@ -100,5 +113,24 @@
     }
     .home-container .user-details{
         grid-template-columns: repeat(2,1fr);
+    }
+    .home-container .user-details > div p:last-of-type{
+        font-weight: normal;
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .home-container .user-details{
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        padding: 0 ;
+    }
+    .home-container .user-details > div{
+        justify-content: center;
+        border-right: 0;
+        border-bottom: 1px solid white;
+        padding: 40px 0 ;
     }
 }
