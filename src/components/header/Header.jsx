@@ -2,15 +2,19 @@
 import logo from '../../images/img/logo.png';
 
 
-import React,{ useState } from 'react';
-import { Link } from 'react-router-dom';
+import React,{ useState, useContext} from 'react';
+import { NavLink , Link} from 'react-router-dom';
+import { UserContext } from '../../App';
 import './header.css';
 
 import searchIcon from '../../images/search-removebg.png';
 import Close from '@material-ui/icons/Close';
 import Hamburger from '@material-ui/icons/Menu';
+import Account from '@material-ui/icons/AccountCircle';
 
 function Header() {
+    const { user, setUser } = useContext(UserContext);
+    console.log('from header', user)
     const [open, setOpen] = useState(false);
     const [height, setHeight] = useState('0px');
     const headerHeight = '285px'
@@ -32,23 +36,29 @@ function Header() {
             <div className='right nav-links'>
             
               <ul>
-                  <li ><Link className='active' to = '/'>Home</Link></li>
-                  <li><Link to = '/services'>Services</Link></li>
-                  <li><Link to = '/blog'>Blog</Link></li>
-                  <li><Link to = '/about-us'>About us</Link></li>
-                  <li><Link to = '/contact-us'>Contact us</Link></li>
-                  <li><Link to = '/login'>Login</Link></li>
+                  <li ><NavLink exact ActiveClassName='active' to = '/'>Home</NavLink></li>
+                  <li><NavLink ActiveClassName='active' to = '/services'>Services</NavLink></li>
+                  <li><NavLink ActiveClassName='active' to = '/blog'>Blog</NavLink></li>
+                  <li><NavLink ActiveClassName='active' to = '/about-us'>About us</NavLink></li>
+                  <li><NavLink ActiveClassName='active' to = '/contact-us'>Contact us</NavLink></li>
+                  <li style={ user.name && { border:'1px solid', padding:'7px 14px 7px 12px', borderRadius:'6px' , color: 'rebeccapurple !important', }}  >
+                  {
+                      user.name  ? 
+                      <Link className='user_active' to = '/dashboard'> <Account/> { user.name }</Link> :
+                      <NavLink ActiveClassName='active' to = '/login'>Login</NavLink> 
+                  }
+                  </li>
               </ul>
             
             </div>
             { <div className='mobile-links' style={{height: height}}>
                   <ul onClick={ toggleOpen }>
-                    <li onClick={ toggleOpen }><Link className='active' to = '/'>Home</Link></li>
-                    <li onClick={ toggleOpen }><Link to = '/services'>Services</Link></li>
-                    <li onClick={ toggleOpen }><Link to = '/blog'>Blog</Link></li>
-                    <li onClick={ toggleOpen }><Link to = '/about-us'>About us</Link></li>
-                    <li onClick={ toggleOpen }><Link to = '/contact-us'>Contact us</Link></li>
-                    <li onClick={ toggleOpen }><Link to = '/login'>Login</Link></li>
+                    <li onClick={ toggleOpen }><NavLink exact ActiveClassName='active' className='active' to = '/'>Home</NavLink></li>
+                    <li onClick={ toggleOpen }><NavLink ActiveClassName='active' to = '/services'>Services</NavLink></li>
+                    <li onClick={ toggleOpen }><NavLink ActiveClassName='active' to = '/blog'>Blog</NavLink></li>
+                    <li onClick={ toggleOpen }><NavLink ActiveClassName='active' to = '/about-us'>About us</NavLink></li>
+                    <li onClick={ toggleOpen }><NavLink ActiveClassName='active' to = '/contact-us'>Contact us</NavLink></li>
+                    <li onClick={ toggleOpen }><NavLink ActiveClassName='active' to = '/login'>Login</NavLink></li>
                   </ul>
             </div> }
         </div>

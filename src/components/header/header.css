@@ -29,18 +29,20 @@
 .header-container .nav-links ul li{
     padding: 10px 20px;
     list-style: none;
+    display: flex;
 }
 
 .header-container .nav-links ul li a{
     transition: all .5s ease;
     color: black;
     text-decoration: none;
-    display: block;
+    display: flex;
+    align-items: center;
     position: relative;
 }
 
-.header-container .nav-links ul li a::after{
-    width: 100%;
+.header-container .nav-links ul li a:not(.user_active)::after {
+    width: 50%;
     position: absolute;
     top: 23px;
     left: 0;
@@ -58,15 +60,29 @@
 }
 
 .header-container .nav-links ul li a:hover::after{
-    width: 100%;
-    transform: scale(1);
+    width: 70%;
+    left: 50%;
+    transform: scale(1) translateX(-50%);
     transition: all .5s ease;
 }
 
-.header-container .nav-links ul li a.active::after{
-    width: 100% !important;
-    transform: scale(1);
+.header-container .nav-links ul li a.user_active{
+    color :rebeccapurple;
 }
+
+.header-container .nav-links ul li a.user_active::after{
+    width: 0% !important;
+    left: 50%;
+    transform:  scale(1) translateX(-50%);
+}
+
+
+.header-container .nav-links ul li a.active::after{
+    width: 70% !important;
+    left: 50%;
+    transform:  scale(1) translateX(-50%);
+}
+
 .header-container .nav-links ul li a.active{
     font-weight: bold;
     
@@ -118,8 +134,14 @@
 }
 
 .header-container .MuiSvgIcon-root{
-    fill:var(--blue-color-1);
+    fill: var(--blue-color-1);
     font-size: 40px !important;
+}
+
+.header-container ul li .MuiSvgIcon-root{
+    fill: rebeccapurple;
+    font-size: 25px !important;
+    margin-right: 5px;
 }
 
 @media screen and (max-width: 1050px) {

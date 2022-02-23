@@ -63,7 +63,7 @@ function Dashboard () {
           <li  > <Work/> My Profile </li>
           <li style ={{borderBottom:'1px solid gainsboro'}} className={path == 'refer' ? 'active' : null } onClick={ () => {history.push('/dashboard/refer')}} > <Autorenew/> Referral </li>
         </ul>
-        <button>{ !user? 'Sign In' : 'Sign Out' }</button>
+        <button>Sign Out</button>
         </div>
       </div>
       <div className='main'  id= {sidebarOpen? '' : 'adjust-left'}>

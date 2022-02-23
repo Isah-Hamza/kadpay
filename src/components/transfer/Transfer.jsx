@@ -41,7 +41,7 @@ function Transfer() {
       <div className = 'service'>
          { step == 1 && <div className='transfer'>
               <h1>Transfer Money</h1>
-              <p>Transfer money to family, friends and clients. Simply fill out this form ...</p>
+              <p>To transfer money to family, friends and clients. Simply fill out this form ...</p>
               <form action = '#'>
                 <div className='recpeint_bank'>
                     <label htmlFor = 'recepient_bank'>Select Recepient Bank</label>

@@ -16,13 +16,17 @@
     background-color: white;
     border-right: 1px solid gainsboro;
     height: 100%;
+    transition: all .5s ease;
 }
 
 .dashboard-container .sidebar  ul li:nth-child(odd) svg{
     color: var(--blue-color-1);
 }
 .dashboard-container .sidebar  ul li:nth-child(even) svg{
-    color: var(--pink-color-1);
+    color: var(--pink-color-1) !important;
+}
+.dashboard-container .sidebar  ul li:nth-child(3n) svg{
+    color: rebeccapurple !important;
 }
 
 .dashboard-container .toggler{
@@ -34,7 +38,7 @@
 
 .dashboard-container .toggler svg {
     font-size: 30px;
-    color: var(--blue-color-1);
+    color: var(--orange-color-1);
     cursor: pointer;
     background-color: white;
 }
@@ -87,6 +91,8 @@
 .dashboard-container .sidebar ul li.active{
     background: var(--blue-color-1);
     color:#000;
+    padding-left: 7px;
+    border-left: 3px solid var(--pink-color-1);
 }
 
 .dashboard-container .sidebar ul li.active svg{
@@ -135,7 +141,7 @@
         left: 250px;
     }
     .dashboard-container .sidebar#adjust-left{
-        left: 0%;
+        left: 0;
     }
 }
 @media screen and (max-width: 460px) {

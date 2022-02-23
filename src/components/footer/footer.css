@@ -43,6 +43,7 @@ p{
         gap: 50px 0;
         margin-bottom: 50px;
         justify-items: unset;
+        font-size: smaller;
     }
 
     .footer-container > div > div:nth-child(2n){

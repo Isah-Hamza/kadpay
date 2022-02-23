@@ -155,7 +155,7 @@
     background-color: transparent;
 }
 .data-component-container .make-payment .payment-mode .buttons button:last-of-type  {
-    background-color: var(--blue-color-1);
+    background:linear-gradient(10deg,var(--blue-color-1),var(--blue-color-2));
     color: white;
 }
 
@@ -214,5 +214,14 @@
     .data-component-container .make-payment .payment-mode .other-options{
         grid-template-columns: repeat(2,1fr);
         gap: 20px;
+    }
+    .data-component-container .progress{
+        margin-left: 0px;
+        gap: 5px;
+        grid-gap: 5px;
+        padding-top: 50px;
+    }
+    .data-component-container .progress > div{
+        font-size: 11px;
     }
 }

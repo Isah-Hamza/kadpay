@@ -1,10 +1,22 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import LoginIcon from '@material-ui/icons/LockTwoTone';
+import{ UserContext } from '../../App';
 import './login.css';
 
 
 function Login() {
+
+   const guestUser = { name: 'Guest' }
+   const userContext = useContext(UserContext);
+   const { user, setUser } = userContext;
+
+   console.log('from login',  user );
+
+   const setGuestUser = () => {
+      setUser(guestUser);
+   }
+
   return <div className='login-container'>
       <div className='left'></div>
         <div className='right'>
@@ -35,10 +47,13 @@ function Login() {
                     <label htmlFor = 'otp'>OTP Pin</label>
                     <input type= 'password' placeholder='Enter OTP Pin' />
                  </div>
-                 <button type='submit' >Login</button>
+                 <div className='buttons'>
+                 <button type='submit'>Login</button>
+                 <button ><Link to = '/dashboard' onClick = {setGuestUser}> Login As Guest </Link> </button>
+                 </div>
               </form>
               <p>Forgot your password <span> <a href='#'> Reset </a> </span> </p>
-              <p>Don't have an account yet? <span> <Link to = '/register'> Sign Up </Link></span> </p>  
+              <p>Don't have an account yet? <span> <Link to = '/register' onClick = {() => {}}> Sign Up </Link></span> </p>  
           </div>
       </div>
 

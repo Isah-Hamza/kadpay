@@ -93,10 +93,26 @@
     margin-top: 25px;
     background:linear-gradient(10deg,var(--blue-color-1),var(--blue-color-2));
     color: white;
-    margin-inline: auto;
     border: none;
+
 }
 
+.login-container .right .buttons{
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+
+.login-container .right button:nth-of-type(2){
+    padding:unset;
+}
+
+.login-container .right button a{
+    text-decoration: none;
+    display:block;
+    padding: 15px 50px;
+    color:white;
+}
 @media screen and (max-width: 780px) {
     .login-container .left{
         display: none;
@@ -114,5 +130,12 @@
     }
     .login-container .login-details .user{
         font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .login-container .right .buttons{
+        flex-direction: column;
+        align-items: center;
     }
 }

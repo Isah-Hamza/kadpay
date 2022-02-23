@@ -16,7 +16,7 @@ const Refer = () => {
           <Person />
           <p class="sponsor-name">null</p>
       </div>
-  </div>
+</div>
 
   <div class="record">
       <p class="referrers">Your referrers</p>
@@ -54,7 +54,6 @@ const Refer = () => {
           </div>
       </div>
   </div>
-
 
     </div>
   )

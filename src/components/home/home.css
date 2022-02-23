@@ -45,7 +45,10 @@
     color: var(--blue-color-1);
 }
 .home-container .user-details > div:nth-child(even) svg{
-    color: var(--pink-color-1);
+    color: var(--pink-color-1) !important;
+}
+.home-container .user-details > div:nth-child(3n) svg{
+    color: rebeccapurple !important;
 }
 .home-container .user-details > div p:first-of-type{
     font-size: 14px;
@@ -97,9 +100,10 @@
     height: 50px;
 }
 
-.home-container .transactions table tr:nth-child(even){
+.home-container .transactions table tbody tr:nth-child(odd){
     background-color: hsl(150, 10%, 90%);
 }
+
 .home-container .transactions table td,
 .home-container .transactions table th{
     padding: 5px 10px;
@@ -128,9 +132,8 @@
         padding: 0 ;
     }
     .home-container .user-details > div{
-        justify-content: center;
         border-right: 0;
         border-bottom: 1px solid white;
-        padding: 40px 0 ;
+        padding: 30px  ;
     }
 }
