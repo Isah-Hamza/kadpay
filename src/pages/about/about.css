@@ -134,6 +134,9 @@
 }
 
 @media screen and (max-width: 400px) {
+    .about-container p{
+        text-align: justify;
+    }
     .about-container .faq h2{
         font-size: 17px;
     }

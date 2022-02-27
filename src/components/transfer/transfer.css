@@ -98,6 +98,7 @@
 
 .transfer-component-container .make-payment .supplied-info > div{
     margin-bottom: 20px;
+    margin-right: 5px;
 }
 
 .transfer-component-container .make-payment .supplied-info > div p:first-of-type{

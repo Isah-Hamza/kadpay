@@ -124,13 +124,17 @@
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
     .home-container .user-details{
         display: flex;
         flex-direction: column;
         gap: 0;
         padding: 0 ;
     }
+    
+}
+
+@media screen and (max-width: 400px) {
     .home-container .user-details > div{
         border-right: 0;
         border-bottom: 1px solid white;
